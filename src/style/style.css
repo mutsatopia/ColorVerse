@@ -1,8 +1,64 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /* utility */
 
+
+body {
+  font-family: 'GmarketSansMedium';
+}
+
+a {
+  text-decoration: none;
+}
+/* header */
+
+.effect .list-menu{
+  display: flex;
+}
+
+/* main */
+
+.color-get h2 p{
+  margin: 0 auto;
+  color: #fff;
+  line-height: 1.2;
+  font-size: 33px;
+  text-shadow: 2px 3px gray;
+}
+
 /* 공통 디자인 모듈 공간 */
+
+/* 타이틀 로고 */
+.logo {
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.logo-img {
+  width: 45px;
+}
+.logo-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 5px;
+  
+}
+.logo-text::after {
+  display: inline-block;
+  content: "Beta";
+  color: #fff;
+  background-color:rgb(235, 97, 212);
+  padding: 0 4px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: bold;
+  position: relative;
+  left: -10px;
+  top: -15px;
+}
 
 /* palette 페이지 */
 
