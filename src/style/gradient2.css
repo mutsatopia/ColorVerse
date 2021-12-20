@@ -25,7 +25,7 @@
     font-weight: normal;
 }
 
-body {
+#app {
     font-family: gmarketLight;
     font-weight: normal;
     background-color: tomato;
@@ -39,24 +39,25 @@ body {
 .notice strong {
     font-family: gmarketBold;
 }
-header {
+
+.header {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 65px;
 }
-.nav-desktop ul {
+
+.nav-list {
     display: flex;
 }
-.nav-list {
+.list-item {
     margin: 0 5px;
     position: relative;
     line-height: 40px;
     overflow: hidden;
 }
-
-.nav-list::before,
-.nav-list::after {
+.list-item::before,
+.list-item::after {
     content: "";
     display: block;
     background-color: #845ec2;
@@ -65,19 +66,16 @@ header {
     position: absolute;
     bottom: 0px;
 }
-.nav-list::after {
+.list-item::after {
     background-color: #2fffad;
     transform: translateX(-100%);
     transition: all 1s;
 }
-.nav-list:hover::after {
+.list-item:hover::after {
     transform: translateX(200%);
 }
 
-form {
-    width: 100%;
-}
-main h2 {
+.main-tit {
     text-align: center;
     font-family: gmarketBold;
     font-size: 2.2rem;
@@ -85,13 +83,15 @@ main h2 {
     margin-bottom: 35px;
 }
 
-form h3 {
+.color-form {
+    width: 100%;
+}
+.form-tit {
     text-align: center;
     margin-bottom: 35px;
     font-family: gmarketBold;
 }
-
-form fieldset {
+.orient-wrap {
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -99,8 +99,7 @@ form fieldset {
     margin-bottom: 35px;
     flex-wrap: wrap;
 }
-
-form fieldset label {
+.orient-wrap .orient {
     padding: 5px;
     border-radius: 50%;
     width: 30px;
@@ -111,39 +110,39 @@ form fieldset label {
     margin: 0 10px;
 }
 
-input:checked + label {
+input:checked + .orient {
     outline: 2px solid black;
 }
 
-form fieldset label .fa-arrow-up {
+.orient .fa-arrow-up {
     text-align: center;
     vertical-align: -5px;
 }
-#radio1 + label {
+#radio1 + .orient {
     transform: rotateZ(45deg);
 }
-#radio2 + label {
+#radio2 + .orient {
     transform: rotateZ(90deg);
 }
-#radio3 + label {
+#radio3 + .orient {
     transform: rotateZ(135deg);
 }
-#radio4 + label {
+#radio4 + .orient {
     transform: rotateZ(180deg);
 }
-#radio5 + label {
+#radio5 + .orient {
     transform: rotateZ(225deg);
 }
-#radio6 + label {
+#radio6 + .orient {
     transform: rotateZ(270deg);
 }
-#radio7 + label {
+#radio7 + .orient {
     transform: rotateZ(315deg);
 }
-#radio9 + label {
+#radio9 + .orient {
     transform: rotateX(180deg) rotateZ(90deg);
 }
 
-.colorpick .title-colorpick {
+.colorpick .tit-colorpick {
     font-family: gmarketBold;
 }
