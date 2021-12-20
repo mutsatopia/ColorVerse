@@ -1,0 +1,149 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@font-face {
+    font-family: gmarketBold;
+    src: url(./GmarketSansOTF/GmarketSansBold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: gmarketLight;
+    src: url(./GmarketSansOTF/GmarketSansLight.otf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: gmarketMedium;
+    src: url(./GmarketSansOTF/GmarketSansMedium.otf);
+    font-weight: normal;
+}
+
+body {
+    font-family: gmarketLight;
+    font-weight: normal;
+    background-color: tomato;
+    color: #fff;
+}
+
+.notice {
+    position: fixed;
+    top: 0;
+}
+.notice strong {
+    font-family: gmarketBold;
+}
+header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+.nav-desktop ul {
+    display: flex;
+}
+.nav-list {
+    margin: 0 5px;
+    position: relative;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.nav-list::before,
+.nav-list::after {
+    content: "";
+    display: block;
+    background-color: #845ec2;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+.nav-list::after {
+    background-color: #2fffad;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.nav-list:hover::after {
+    transform: translateX(200%);
+}
+
+form {
+    width: 100%;
+}
+main h2 {
+    text-align: center;
+    font-family: gmarketBold;
+    font-size: 2.2rem;
+    text-shadow: 2px 3px 0px #898999;
+    margin-bottom: 35px;
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: gmarketBold;
+}
+
+form fieldset {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+form fieldset label {
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+input:checked + label {
+    outline: 2px solid black;
+}
+
+form fieldset label .fa-arrow-up {
+    text-align: center;
+    vertical-align: -5px;
+}
+#radio1 + label {
+    transform: rotateZ(45deg);
+}
+#radio2 + label {
+    transform: rotateZ(90deg);
+}
+#radio3 + label {
+    transform: rotateZ(135deg);
+}
+#radio4 + label {
+    transform: rotateZ(180deg);
+}
+#radio5 + label {
+    transform: rotateZ(225deg);
+}
+#radio6 + label {
+    transform: rotateZ(270deg);
+}
+#radio7 + label {
+    transform: rotateZ(315deg);
+}
+#radio9 + label {
+    transform: rotateX(180deg) rotateZ(90deg);
+}
+
+.colorpick .title-colorpick {
+    font-family: gmarketBold;
+}
