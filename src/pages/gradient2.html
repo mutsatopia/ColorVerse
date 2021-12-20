@@ -15,147 +15,153 @@
         />
     </head>
     <body>
-        <div class="notice">
-            <strong>! new feature: </strong>
-            <span>You can create a gradient out of 3 colors!</span>
-        </div>
-        <header>
-            <a href="">colorVerse</a>
-            <nav class="nav-desktop">
-                <ul>
-                    <li class="nav-list"><a href="#">palletes</a></li>
-                    <li class="nav-list"><a href="#">gradient</a></li>
-                    <li class="nav-list">
-                        <a href="#">3-color-gradient</a
-                        ><span class="badge-new">new</span>
-                    </li>
-                    <li class="nav-list"><a href="#">contact</a></li>
-                    <li class="nav-list"><a href="#">info</a></li>
-                    <li class="nav-list">
-                        <a href="#"
-                            ><i class="fab fa-twitter"></i
-                            ><span class="sr-only">twitter</span></a
-                        >
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Generate a CSS color Gradient</h2>
-            <form>
-                <h3>Choose orientation</h3>
-                <fieldset>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio1"
-                        class="sr-only"
-                    />
-                    <label for="radio1" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio2"
-                        class="sr-only"
-                    />
-                    <label for="radio2" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio3"
-                        class="sr-only"
-                    />
-                    <label for="radio3" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio4"
-                        class="sr-only"
-                    />
-                    <label for="radio4" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio5"
-                        class="sr-only"
-                    />
-                    <label for="radio5" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio6"
-                        class="sr-only"
-                    />
-                    <label for="radio6" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio7"
-                        class="sr-only"
-                    />
-                    <label for="radio7" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio8"
-                        class="sr-only"
-                    />
-                    <label for="radio8" class="ori"
-                        ><i class="fas fa-arrow-up"></i
-                    ></label>
-                    <input
-                        type="radio"
-                        name="orientation"
-                        value=""
-                        id="radio9"
-                        class="sr-only"
-                    />
-                    <label for="radio9" class="ori"
-                        ><i class="fas fa-redo"></i
-                    ></label>
-                </fieldset>
-                <article class="colorpick">
-                    <h3 class="title-colorpick">Enter colors</h3>
-                    <input type="text" value="#080198" class="start-color" />
-                    <!-- <input type="text" value="#080198" class="middle-color"/> -->
-                    <input type="text" value="#a98013" class="end-color" />
-                </article>
-                <button type="button" class="btn-generate">
-                    <i class="fas fa-rocket"></i>GENERATE
-                </button>
-            </form>
+        <div id="app">
+            <div class="notice">
+                <strong>! new feature: </strong>
+                <span>You can create a gradient out of 3 colors!</span>
+            </div>
+            <header class="header">
+                <a href="">colorVerse</a>
+                <nav class="nav-desktop">
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="#">palletes</a></li>
+                        <li class="list-item"><a href="#">gradient</a></li>
+                        <li class="list-item">
+                            <a href="#">3-color-gradient</a
+                            ><span class="badge-new">new</span>
+                        </li>
+                        <li class="list-item"><a href="#">contact</a></li>
+                        <li class="list-item"><a href="#">info</a></li>
+                        <li class="list-item">
+                            <a href="#"
+                                ><i class="fab fa-twitter"></i
+                                ><span class="sr-only">twitter</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <h2 class="main-tit">Generate a CSS color Gradient</h2>
+                <form class="color-form">
+                    <h3 class="form-tit">Choose orientation</h3>
+                    <fieldset class="orient-wrap">
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio1"
+                            class="sr-only"
+                        />
+                        <label for="radio1" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio2"
+                            class="sr-only"
+                        />
+                        <label for="radio2" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio3"
+                            class="sr-only"
+                        />
+                        <label for="radio3" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio4"
+                            class="sr-only"
+                        />
+                        <label for="radio4" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio5"
+                            class="sr-only"
+                        />
+                        <label for="radio5" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio6"
+                            class="sr-only"
+                        />
+                        <label for="radio6" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio7"
+                            class="sr-only"
+                        />
+                        <label for="radio7" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio8"
+                            class="sr-only"
+                        />
+                        <label for="radio8" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio9"
+                            class="sr-only"
+                        />
+                        <label for="radio9" class="orient"
+                            ><i class="fas fa-redo"></i
+                        ></label>
+                    </fieldset>
+                    <article class="colorpick">
+                        <h3 class="tit-colorpick">Enter colors</h3>
+                        <input
+                            type="text"
+                            value="#080198"
+                            class="start-color"
+                        />
+                        <!-- <input type="text" value="#080198" class="middle-color"/> -->
+                        <input type="text" value="#a98013" class="end-color" />
+                    </article>
+                    <button type="button" class="btn-generate">
+                        <i class="fas fa-rocket"></i>GENERATE
+                    </button>
+                </form>
 
-            <a href="#">3-Color-Gradient</a>
-            <!-- CSS Code -->
-            <article class="result">
-                <p class="result-title">CSS Code:</p>
-                <code class="result-code">
-                    background-image: linear-gradient(to right top, #051937,
-                    #004d7a, #008793, #00bf72, #a8eb12);
-                </code>
-            </article>
-        </main>
+                <a href="#">3-Color-Gradient</a>
+                <!-- CSS Code -->
+                <article class="result">
+                    <p class="result-tit">CSS Code:</p>
+                    <code class="result-code">
+                        background-image: linear-gradient(to right top, #051937,
+                        #004d7a, #008793, #00bf72, #a8eb12);
+                    </code>
+                </article>
+            </main>
+        </div>
     </body>
 </html>
