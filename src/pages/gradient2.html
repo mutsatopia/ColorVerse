@@ -1,15 +1,167 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>colorVerse-gradient</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div id="app">
+            <div class="notice">
+                <strong>! new feature: </strong>
+                <span>You can create a gradient out of 3 colors!</span>
+            </div>
+            <header class="header">
+                <a href="">colorVerse</a>
+                <nav class="nav-desktop">
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="#">palletes</a></li>
+                        <li class="list-item"><a href="#">gradient</a></li>
+                        <li class="list-item">
+                            <a href="#">3-color-gradient</a
+                            ><span class="badge-new">new</span>
+                        </li>
+                        <li class="list-item"><a href="#">contact</a></li>
+                        <li class="list-item"><a href="#">info</a></li>
+                        <li class="list-item">
+                            <a href="#"
+                                ><i class="fab fa-twitter"></i
+                                ><span class="sr-only">twitter</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <h2 class="main-tit">Generate a CSS color Gradient</h2>
+                <form class="color-form">
+                    <h3 class="form-tit">Choose orientation</h3>
+                    <fieldset class="orient-wrap">
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio1"
+                            class="sr-only"
+                        />
+                        <label for="radio1" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio2"
+                            class="sr-only"
+                        />
+                        <label for="radio2" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio3"
+                            class="sr-only"
+                        />
+                        <label for="radio3" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio4"
+                            class="sr-only"
+                        />
+                        <label for="radio4" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio5"
+                            class="sr-only"
+                        />
+                        <label for="radio5" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio6"
+                            class="sr-only"
+                        />
+                        <label for="radio6" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio7"
+                            class="sr-only"
+                        />
+                        <label for="radio7" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio8"
+                            class="sr-only"
+                        />
+                        <label for="radio8" class="orient"
+                            ><i class="fas fa-arrow-up"></i
+                        ></label>
+                        <input
+                            type="radio"
+                            name="orientation"
+                            value=""
+                            id="radio9"
+                            class="sr-only"
+                        />
+                        <label for="radio9" class="orient"
+                            ><i class="fas fa-redo"></i
+                        ></label>
+                    </fieldset>
+                    <article class="colorpick">
+                        <h3 class="tit-colorpick">Enter colors</h3>
+                        <input
+                            type="text"
+                            value="#080198"
+                            class="start-color"
+                        />
+                        <!-- <input type="text" value="#080198" class="middle-color"/> -->
+                        <input type="text" value="#a98013" class="end-color" />
+                    </article>
+                    <button type="button" class="btn-generate">
+                        <i class="fas fa-rocket"></i>GENERATE
+                    </button>
+                </form>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gradient2</title>
-</head>
-
-<body>
-
-</body>
-
+                <a href="#">3-Color-Gradient</a>
+                <!-- CSS Code -->
+                <article class="result">
+                    <p class="result-tit">CSS Code:</p>
+                    <code class="result-code">
+                        background-image: linear-gradient(to right top, #051937,
+                        #004d7a, #008793, #00bf72, #a8eb12);
+                    </code>
+                </article>
+            </main>
+        </div>
+    </body>
 </html>
