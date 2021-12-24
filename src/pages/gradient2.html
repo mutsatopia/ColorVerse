@@ -5,14 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>colorVerse-gradient</title>
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../style/reset.css" />
+        <link rel="stylesheet" href="../style/gradient2.css" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
             crossorigin="anonymous"
         />
+        <link
+            rel="stylesheet"
+            href="../../modules/module_nav-bar/module_nav-bar.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../../modules/module_colorPicker/module-colorPicker.css"
+        />
+        <script src="../../modules/module_colorPicker/module-colorPicker.js"></script>
+        <link
+            rel="stylesheet"
+            href="../../modules/module_generateButton/module-generateButton.css"
+        />
+        <script src="../../modules/module_generateButton/module-generateButton.js"></script>
     </head>
     <body>
         <div id="app">
@@ -23,17 +37,23 @@
             <header class="header">
                 <a href="">colorVerse</a>
                 <nav class="nav-desktop">
-                    <ul class="nav-list">
-                        <li class="list-item"><a href="#">palletes</a></li>
-                        <li class="list-item"><a href="#">gradient</a></li>
-                        <li class="list-item">
-                            <a href="#">3-color-gradient</a
+                    <ul>
+                        <li>
+                            <a href="./pallete.html" class="nav-list"
+                                >palletes</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="nav-list active">gradient</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-list">3-color-gradient</a
                             ><span class="badge-new">new</span>
                         </li>
-                        <li class="list-item"><a href="#">contact</a></li>
-                        <li class="list-item"><a href="#">info</a></li>
-                        <li class="list-item">
-                            <a href="#"
+                        <li><a href="#" class="nav-list">contact</a></li>
+                        <li><a href="#" class="nav-list">info</a></li>
+                        <li>
+                            <a href="#" class="nav-list"
                                 ><i class="fab fa-twitter"></i
                                 ><span class="sr-only">twitter</span></a
                             >
@@ -49,9 +69,10 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to right top"
                             id="radio1"
                             class="sr-only"
+                            checked
                         />
                         <label for="radio1" class="orient"
                             ><i class="fas fa-arrow-up"></i
@@ -59,7 +80,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to right"
                             id="radio2"
                             class="sr-only"
                         />
@@ -69,7 +90,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to right bottom"
                             id="radio3"
                             class="sr-only"
                         />
@@ -79,7 +100,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to bottom"
                             id="radio4"
                             class="sr-only"
                         />
@@ -89,7 +110,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to left bottom"
                             id="radio5"
                             class="sr-only"
                         />
@@ -99,7 +120,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to left"
                             id="radio6"
                             class="sr-only"
                         />
@@ -109,7 +130,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to left top"
                             id="radio7"
                             class="sr-only"
                         />
@@ -119,7 +140,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="to top"
                             id="radio8"
                             class="sr-only"
                         />
@@ -129,7 +150,7 @@
                         <input
                             type="radio"
                             name="orientation"
-                            value=""
+                            value="circle"
                             id="radio9"
                             class="sr-only"
                         />
@@ -139,27 +160,57 @@
                     </fieldset>
                     <article class="colorpick">
                         <h3 class="tit-colorpick">Enter colors</h3>
-                        <input
-                            type="text"
-                            value="#080198"
-                            class="start-color"
-                        />
-                        <!-- <input type="text" value="#080198" class="middle-color"/> -->
-                        <input type="text" value="#a98013" class="end-color" />
+                        <section class="section-color">
+                            <!-- 3-COLOR-GRADIENT -->
+                            <!-- GRADIENT -->
+                            <div class="color-input">
+                                <input
+                                    class="color-pick"
+                                    type="color"
+                                    value="#051937"
+                                />
+                                <input
+                                    class="color-code"
+                                    type="text"
+                                    value="#051937"
+                                    maxlength="7"
+                                />
+                            </div>
+                            <div class="color-input">
+                                <input
+                                    class="color-pick"
+                                    type="color"
+                                    value="#a8eb12"
+                                />
+                                <input
+                                    class="color-code"
+                                    type="text"
+                                    value="#a8eb12"
+                                    maxlength="7"
+                                />
+                            </div>
+                        </section>
                     </article>
-                    <button type="button" class="btn-generate">
-                        <i class="fas fa-rocket"></i>GENERATE
-                    </button>
+                    <div class="wrap-gen">
+                        <button
+                            type="button"
+                            class="btn-gen"
+                            onclick="generate(`gradient`)"
+                        >
+                            <i class="fas fa-rocket"></i>
+                            generate
+                        </button>
+                    </div>
                 </form>
 
-                <a href="#">3-Color-Gradient</a>
+                <a href="#" class="link-3gradient">3-Color-Gradient</a>
                 <!-- CSS Code -->
                 <article class="result">
-                    <p class="result-tit">CSS Code:</p>
-                    <code class="result-code">
+                    <h3 class="result-tit">CSS Code:</h3>
+                    <div class="result-code">
                         background-image: linear-gradient(to right top, #051937,
                         #004d7a, #008793, #00bf72, #a8eb12);
-                    </code>
+                    </div>
                 </article>
             </main>
         </div>
