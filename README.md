@@ -51,7 +51,7 @@
 - main palette page : 문정은 / 안호진
 - gradient page : 김초연 / 이춘구
 
-## 5.이춘구
+## 5. UI
 
 
 ## 6. 메인 기능
