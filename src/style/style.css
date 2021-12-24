@@ -7,13 +7,19 @@ body {
   font-family: 'GmarketSansMedium';
   background-color:rgb(133, 131, 131);
   color: #fff;
+}
 
+main {
+  height: 100vh;
 }
 
 a {
   text-decoration: none;
 }
 /* header */
+header {
+  position: absolute;
+}
 .feature-box {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -42,6 +48,9 @@ a {
 }
 
 /* main */
+.color-get {
+  margin-top: 20vh;
+}
 .color-get h2 {
   width: 70vw;
   margin: 0 auto;
