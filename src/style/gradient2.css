@@ -11,28 +11,30 @@
 
 @font-face {
     font-family: gmarketBold;
-    src: url(./GmarketSansOTF/GmarketSansBold.otf);
+    src: url(../../public/fonts/GmarketSansBold.otf);
     font-weight: bold;
 }
 @font-face {
     font-family: gmarketLight;
-    src: url(./GmarketSansOTF/GmarketSansLight.otf);
+    src: url(../../public/fonts/GmarketSansOTF/GmarketSansLight.otf);
     font-weight: lighter;
 }
 @font-face {
     font-family: gmarketMedium;
-    src: url(./GmarketSansOTF/GmarketSansMedium.otf);
+    src: url(../../public/fonts/GmarketSansOTF/GmarketSansMedium.otf);
     font-weight: normal;
 }
 
 #app {
+    height: 100vh;
     font-family: gmarketLight;
     font-weight: normal;
-    background-color: tomato;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     color: #fff;
 }
 
 .notice {
+    display: none;
     position: fixed;
     top: 0;
 }
@@ -41,10 +43,14 @@
 }
 
 .header {
-    margin-top: 20px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 65px;
+}
+
+.nav-desktop {
+    display: none;
 }
 
 .nav-list {
@@ -111,7 +117,7 @@
 }
 
 input:checked + .orient {
-    outline: 2px solid black;
+    outline: 2px solid white;
 }
 
 .orient .fa-arrow-up {
@@ -145,4 +151,34 @@ input:checked + .orient {
 
 .colorpick .tit-colorpick {
     font-family: gmarketBold;
+    text-align: center;
+}
+
+.link-3gradient {
+    display: block;
+    width: 130px;
+    margin: 20px auto 0;
+    text-decoration: underline;
+    text-underline-position: under;
+    opacity: 0.7;
+}
+.link-3gradient:hover {
+    opacity: 1;
+}
+
+.result {
+    margin: 40px auto 0;
+    width: 500px;
+}
+
+.result-tit {
+    font-family: gmarketBold;
+}
+.result-code {
+    margin-top: 10px;
+    padding: 20px 25px;
+    border-left: 3px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(189,189,189,0.1);
+    line-height: 25px;
 }
