@@ -2,35 +2,38 @@
     display: flex;
 }
 .nav-list {
-    margin: 0 5px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 0;
     position: relative;
-    line-height: 40px;
-    overflow: hidden;
 }
-.nav-list::before,
-.nav-list::after {
-    content: '';
-    display: block;
-    background-color: #845ec2;
-    width: 100%;
+.nav-list::after,
+.nav-list::before {
+    content: "";
+    width: 0;
     height: 3px;
     position: absolute;
-    bottom: 0px;
-}
-
-/* 중요한 건 여기서부터!!!! */
-:root {
-    --greenline-position: -100%;
-    --purpleline-position: -200%;
+    right: 0;
+    bottom: 0;
 }
 .nav-list::before {
     background-color: #845ec2;
-    transform: translateX(var(--purpleline-position));
-    transition: all 1s;
+    transition: width 0.4s 0.1s;
 }
-
 .nav-list::after {
     background-color: #2fffad;
-    transform: translateX(var(--greenline-position));
-    transition: all 0.5s;
+    transition: width 0.3s;
+}
+.nav-list:hover::after,
+.nav-list:hover::before {
+    width: 100%;
+    left: 0;
+}
+.nav-list.active:after {
+    width: 100%;
+    background-color: #2fffad;
+    left: 0;
+}
+.nav-list.active:before {
+    z-index: 10;
 }
