@@ -1,8 +1,152 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /* utility */
 
+
+body {
+  font-family: 'GmarketSansMedium';
+  background-color:rgb(133, 131, 131);
+  color: #fff;
+}
+
+main {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+/* header */
+header {
+  position: absolute;
+}
+.feature-box {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  width: 100%;
+}
+.feature-box .fix-header{
+  font-weight: bold;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.feature-box .fix-header span{
+  font-weight: 300;
+}
+
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.effect .list-menu{
+  display: flex;
+}
+
+/* main */
+.color-get {
+  margin-top: 20vh;
+}
+.color-get h2 {
+  width: 70vw;
+  margin: 0 auto;
+  font-family: 'GmarketSansBold';
+}
+.color-get h2 p {
+  margin: 0 auto;
+  color: #fff;
+  line-height: 1.2;
+  text-shadow: 2px 3px gray;
+  font-size: 3rem;
+}
+
+
 /* 공통 디자인 모듈 공간 */
+
+/* header */
+.logo {
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  margin: 20px;
+  align-items: center;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+}
+.logo-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 5px;
+  /* line-height: 45px; */
+}
+.logo-text::after {
+  display: inline-block;
+  content: "Beta";
+  line-height: 16px;
+  width: 26px;
+  height: 15px;
+  color: #fff;
+  background-color:rgb(235, 97, 212);
+  padding: 0 4px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: bold;
+  position: relative;
+  left: -10px;
+  top: -15px;
+  
+}
+
+.page-title .effect {
+  margin: auto 0;
+}
+
+.page-title .effect .list-menu li{
+  padding: 10px;
+}
+
+/* 모바일용버튼 */
+.btn-nav {
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.btn-nav .btn-select,
+.btn-generate .btn-gen{
+  display: block;
+  width: 50px;  
+  height: 50px;
+  background-color: #00a1ba;
+  border-radius: 50%;
+}
+.btn-nav .list-menu {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: right;
+}
+.btn-nav .list-menu a {
+  background: #00a1ba;
+  display: block;
+  border-radius: 25px;
+  margin-top: 10px;
+  line-height: 100%;
+  padding: 12px;
+  text-align: center;
+  font-size: 10px;
+}
+
 
 /* palette 페이지 */
 

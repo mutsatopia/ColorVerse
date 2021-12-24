@@ -16,29 +16,21 @@
 ## 3. 프로젝트 구조와 개발 일정
   ### 3.1 프로젝트 구조
   ```
-  .
-  ├─index.html
-  │ palette.html
-  │ 
-  │ 
-  │ 
-  ├─
-  │ 
-  │ 
-  └─   ├─ css
-      │   ├─ default.css
-      │   ├─ reset.css
-      │   ├─ font.css   
-      │   └─ style.css
-      ├─ font
-      │   ├─ font.css   
-      │   └─ style.css
-      └─ js
-          ├─ font.css   
-          └─ style.css
-      
-      
-```
+    ├─ css
+    │   ├─ default.css
+    │   ├─ reset.css
+    │   ├─ font.css   
+    │   └─ style.css
+    ├─ font
+    │   ├─ font.css   
+    │   └─ style.css
+    └─ js
+        ├─ font.css   
+        └─ style.css
+    index.html
+    palette.html
+    gradient.html
+  ```
   ### 3.2 개발일정
   - 기간 : 2021.12.16(목) ~ 2021.01.02(일)
 
