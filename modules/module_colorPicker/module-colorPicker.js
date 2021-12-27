@@ -9,38 +9,29 @@ colorCode.forEach((elem, index) => {
             colorCode[index].style = "color: black";
         } else {
             colorPick[index].value = colorCode[index].value;
-            if (colorCode[index].value[3] <= 8) {
-                colorCode[index].style = "color: white";
-            } else {
-                colorCode[index].style = "color: black";
-            }
+            changeTextColor(colorCode[index]);
         }
     });
 });
 
 colorPick.forEach((elem, index) => {
-    elem.addEventListener("input", function () {
-        console.log('!!!')
-        colorCode[index].value = this.value;
-        if (this.value[3] <= 8) {
-            colorCode[index].style = "color: white";
-        } else {
-            colorCode[index].style = "color: black";
-        }
+    elem.addEventListener("input", () => {
+        colorCode[index].value = colorPick[index].value;
+        changeTextColor(colorCode[index]);
     });
 });
 
-// function ChangeTextColor(hex) {
-//     // 페이지 초기 로딩시 colorPick의 색에 따라 colorCode의 색을 바꿔주는 함수 작성할 것
-//     if (hex[3] <= 8) {
-//         hex.style = "color: white";
-//     } else {
-//         hex.style = "color: black";
-//     }
-// }
+colorCode.forEach((elem) => {
+    changeTextColor(elem);
+});
 
-// ChangeTextColor('#253456');
-
+function changeTextColor(hex) {
+    if (hex.value[3] <= 8) {
+        hex.style = "color: white";
+    } else {
+        hex.style = "color: black";
+    }
+}
 // const btn = document.querySelector(".btn");
 // btn.addEventListener("click", () => {
 //     const hexArr = [...colorPick].map((elem) => {
