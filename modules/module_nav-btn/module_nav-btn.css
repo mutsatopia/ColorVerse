@@ -1,0 +1,40 @@
+.btn-nav-side,
+.btn-gen-side {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 15px;
+}
+.btn-nav-side {
+  top: 30px;
+}
+.btn-gen-side {
+  top: 90px;
+}
+.btn-nav-side .btn-select,
+.btn-gen-side .btn-gen{
+  display: block;
+  width: 50px;  
+  height: 50px;
+  text-align: center;
+  background-color: #00a1ba;
+  border-radius: 50%;
+  color: #fff;
+}
+.btn-nav-side .list-menu {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: right;
+}
+.btn-nav-side .list-menu a {
+  background: #00a1ba;
+  display: block;
+  border-radius: 25px;
+  margin-top: 10px;
+  line-height: 100%;
+  padding: 12px;
+  text-align: center;
+  font-size: 10px;
+}

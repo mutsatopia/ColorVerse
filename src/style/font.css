@@ -1,15 +1,22 @@
 @charset "utf-8";
 
-@font-face {
-  font-family: 'GmarketSansBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "../../modules/module_nav-bar/module_nav-bar.css";
+@import "../../modules/module_colorPicker/module-colorPicker.css";
+@import "../../modules/module_generateButton/module-generateButton.css";
 
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'GmarketSansBold';
+    src: url("../../public/fonts/GmarketSansBold.otf");
+    font-weight: bold;
 }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url("../../public/fonts/GmarketSansMedium.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url("../../public/fonts/GmarketSansLight.otf");
+    font-weight: lighter;
+}
+
