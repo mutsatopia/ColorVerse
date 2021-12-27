@@ -3,9 +3,9 @@
 }
 
 .section-color {
-    display : flex;
-    flex-direction : column;
-    gap : 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     margin-top: 20px;
 }
@@ -58,5 +58,4 @@ input[type="color" i]::-webkit-color-swatch {
     height: 50px;
     border-radius: 25px;
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
-
 }
