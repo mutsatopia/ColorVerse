@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>colorVerse-gradient</title>
         <link rel="stylesheet" href="../style/reset.css" />
-        <link rel="stylesheet" href="../style/gradient2.css" />
+        <link rel="stylesheet" href="../style/gradient-page.css" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -20,6 +20,10 @@
         <script
             defer
             src="../../modules/module_generateButton/module-generateButton.js"
+        ></script>
+        <script
+            defer
+            src="../../modules/module_gradient-result/module_gradient-result.js"
         ></script>
     </head>
     <body>
@@ -207,9 +211,15 @@
 
                 <article class="result">
                     <h3 class="result-tit">CSS Code:</h3>
-                    <div class="result-code">
-                        background-image: linear-gradient(to right top, #051937,
-                        #a8eb12);
+                    <div class="result-wrap">
+                        <span class="result-code"
+                            >background-image: linear-gradient(to right top, #051937, #a8eb12);</span>
+                        <div class="copy-wrap">
+                            <button class="copy-btn">
+                                <i class="far fa-copy"></i>
+                            </button>
+                            <span class="copy-notice">copied!</span>
+                        </div>
                     </div>
                 </article>
             </main>
