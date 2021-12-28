@@ -32,10 +32,3 @@ function changeTextColor(hex) {
         hex.style = "color: black";
     }
 }
-// const btn = document.querySelector(".btn");
-// btn.addEventListener("click", () => {
-//     const hexArr = [...colorPick].map((elem) => {
-//         return elem.value;
-//     });
-//     console.log(hexArr);
-// });
