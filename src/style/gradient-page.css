@@ -2,6 +2,7 @@
 @import "../../modules/module_colorPicker/module-colorPicker.css";
 @import "../../modules/module_generateButton/module-generateButton.css";
 @import "../../modules/module_gradient-result/module_gradient-result.css";
+@import "../../modules/module_logo/module_logo.css";
 
 .sr-only {
     position: absolute;
@@ -50,9 +51,9 @@ body {
 }
 
 .header {
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    padding: 30px 50px;
     margin-bottom: 65px;
 }
 

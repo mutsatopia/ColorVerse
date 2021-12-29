@@ -9,10 +9,22 @@
         <link rel="stylesheet" href="../style/gradient-page.css" />
         <link
             rel="stylesheet"
+            href="../../modules/module_logo/module_logo.css"
+        />
+        <link
+            rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
             crossorigin="anonymous"
         />
+        <script
+            defer
+            src="../../modules/module_colorPicker/module-colorPicker.js"
+        ></script>
+        <script
+            defer
+            src="../../modules/module_generateButton/module-generateButton.js"
+        ></script>
     </head>
     <body>
         <div id="app">
@@ -22,11 +34,18 @@
             </div>
 
             <header class="header">
-                <a href="">colorVerse</a>
+                <a href="/" class="logo">
+                    <img
+                        src="../img/two_planet.png"
+                        alt="color space logo"
+                        class="logo-img"
+                    />
+                    <h1 class="logo-text">ColorVerse</h1>
+                </a>
                 <nav class="nav-desktop">
                     <ul>
                         <li>
-                            <a href="./pallete.html" class="nav-list"
+                            <a href="../../index.html" class="nav-list"
                                 >palletes</a
                             >
                         </li>
@@ -35,7 +54,7 @@
                                 >gradient</a
                             >
                         </li>
-                        <li>
+                        <li class="has-badge">
                             <a href="./gradient3.html" class="nav-list active"
                                 >3-color-gradient</a
                             ><span class="badge-new">new</span>
@@ -204,10 +223,6 @@
                         </button>
                     </div>
                 </form>
-
-                <a href="./gradient3.html" class="link-3gradient"
-                    >3-Color-Gradient</a
-                >
 
                 <article class="result">
                     <h3 class="result-tit">CSS Code:</h3>
