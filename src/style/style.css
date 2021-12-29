@@ -2,81 +2,63 @@
 
 /* utility */
 
-
 body {
-  font-family: gmarket; 
-  font-weight: normal;
-  background-color:rgb(133, 131, 131);
-  color: #fff;
-}
-
-main {
-  height: 100vh;
+    font-family: gmarket;
+    font-weight: normal;
+    background-color: rgb(133, 131, 131);
+    color: #fff;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 /* header */
-header {
-  
-}
 .feature-box {
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: fixed;
-  width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
 }
-.feature-box .fix-header{
-  font-weight: bold;
-  max-width: 1400px;
-  margin: 0 auto;
+.feature-box .fix-header {
+    font-weight: bold;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-.feature-box .fix-header span{
-  font-weight: 300;
+.feature-box .fix-header span {
+    font-weight: 300;
+}
+
+.bg-default {
+    height: 100vh;
 }
 
 .page-title {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  width: 100vw;
-  margin: 0 auto;
-  margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100vw;
+    margin: 0 auto;
 }
 .nav-desktop {
-  margin: auto 0;
+    margin: auto 0;
 }
 
 /* main */
-main {
-  
-}
-main .color-get {
-  /* position: relative; */
-  /* display:flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-}
-.color-get {
-  /* margin-top: 20vh; */
-  
-}
 .color-get h2 {
-  width: 70vw;
-  margin: 0 auto;
-  font-family: 'GmarketSansBold';
+    width: 70vw;
+    margin: 0 auto;
+    font-family: "GmarketSansBold";
 }
 .color-get h2 p {
-  margin: 0 auto;
-  color: #fff;
-  line-height: 1.2;
-  text-shadow: 2px 3px gray;
-  font-size: 3rem;
-  text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 2px 3px gray;
+    font-size: 3rem;
+    text-align: center;
 }
 .color-get p {
-  text-align: center;
+    text-align: center;
 }
 
 /* palette 페이지 */

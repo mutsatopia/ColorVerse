@@ -10,7 +10,7 @@
   top: 30px;
 }
 .btn-gen-side {
-  top: 90px;
+  top: 80px;
 }
 .btn-nav-side .btn-select,
 .btn-gen-side .btn-gen{
@@ -23,10 +23,13 @@
   color: #fff;
 }
 .btn-nav-side .list-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   color: #fff;
   text-align: right;
+}
+.btn-nav-side .list-menu.on {
+  display: block;
 }
 .btn-nav-side .list-menu a {
   background: #00a1ba;
