@@ -30,7 +30,10 @@ function generateGradient() {
 
 function paintBackground() {
     const resultCode = document.querySelector(".result-code");
-    const bgColor = resultCode.textContent.trim().slice(17, -1);
+    const bgColor = resultCode.textContent
+        .replace(/^\s+|\s{2,}|\s+$/, "")
+        .slice(18, -1);
+    console.log(bgColor);
     document.body.style.background = bgColor;
 }
 paintBackground();
