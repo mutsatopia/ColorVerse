@@ -2,7 +2,6 @@
   cursor: pointer;
   display: flex;
   text-decoration: none;
-  /* margin: 20px; */
   align-items: center;
 }
 
@@ -11,7 +10,7 @@
   height: 45px;
 }
 .logo-text {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
   color: #fff;
   margin-left: 5px;

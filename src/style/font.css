@@ -1,22 +1,17 @@
 @charset "utf-8";
 
-@import "../../modules/module_nav-bar/module_nav-bar.css";
-@import "../../modules/module_colorPicker/module-colorPicker.css";
-@import "../../modules/module_generateButton/module-generateButton.css";
-
 @font-face {
-    font-family: 'GmarketSansBold';
-    src: url("../../public/fonts/GmarketSansBold.otf");
-    font-weight: bold;
+  font-family: gmarket;
+  src: url("../../public/fonts/GmarketSansBold.otf");
+  font-weight: bold;
 }
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url("../../public/fonts/GmarketSansMedium.otf");
-    font-weight: normal;
+  font-family: gmarket;
+  src: url("../../public/fonts/GmarketSansMedium.otf");
+  font-weight: normal;
 }
 @font-face {
-    font-family: 'GmarketSansLight';
-    src: url("../../public/fonts/GmarketSansLight.otf");
-    font-weight: lighter;
+  font-family: gmarket;
+  src: url("../../public/fonts/GmarketSansLight.otf");
+  font-weight: lighter;
 }
-
