@@ -29,12 +29,14 @@
     font-size: 18px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
-    transition: font-size 0.3s;
+    transition: font-size 0.3s, background-color 0.3s;
 }
 .copy-btn:hover {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
     background-color: #fff;
+}
+.copy-btn .fa-copy {
+    vertical-align: -1px;
 }
 
 .copy-notice {
