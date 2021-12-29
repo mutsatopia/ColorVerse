@@ -1,111 +1,158 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ColorVerse</title>
+        <link rel="stylesheet" href="./src/style/default.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+    </head>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ColorVerse</title>
-    <link rel="stylesheet" href="./src/style/default.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous" />
-  </head>
-
-  <body>
-    <!-- feature box 페이지에서 그냥 -->
-    <!-- <div class="feature-box">
-      <div class="fix-header">! New Feature: <span href="">You can now create a gradient out of 3
-          colors!</span></div>
-    </div> -->
-    <!-- 모바일에서는 가림 -->
-    <header class="page-title">
-      <!-- 타이틀 로고 -->
-      <a href="/" class="logo">
-        <img src="./src/img/two_planet.png" alt="color space logo" class="logo-img">
-        <h1 class="logo-text">ColorVerse</h1>
-      </a>
-      <!-- nav-bar -->
-      <nav class="nav-desktop">
-        <ul>
-          <li><a href="./pallete.html" class="nav-list">palletes</a></li>
-          <li><a href="./src/pages/gradient2.html" class="nav-list active">gradient</a>
-          </li>
-          <li>
-            <a href="./src/pages/gradient3.html" class="nav-list">3-color-gradient</a><span
-              class="badge-new">new</span>
-          </li>
-          <li><a href="#" class="nav-list">contact</a></li>
-          <li><a href="#" class="nav-list">info</a></li>
-          <li>
-            <a href="#" class="nav-list"><i class="fab fa-twitter"></i><span
-                class="sr-only">twitter</span></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <section class="color-get">
-            <h2>
-                <p class="tit-sub">Never waste Hours on finding the perfect Color Palette again! </p>
-                <p class="tit-main">Just Enter a Color!</p>
-            </h2>
-            <p>And Generate nice Color Palettes </p>
-            <form action="">
-                <input type="text" placeholder="#845EC2">
-                <button type="button" class="btn-gen">generate</button>
-            </form>
-        </section>
-        <section>
-            <h3 class="sr-only">recommended color</h3>
-            <article>
-                <h4>Generic Gradient</h4>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </article>
-            <div class="btn-nav-side">
-                <button type="button" class="btn-select"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                <ul class="list-menu">
-                    <li>
-                        <a class="" href="/">PALETTES</a>
-                    </li>
-                    <li>
-                        <a href="">GRADIENT</a>
-                    </li>
-                    <li>
-                    <a href="">3-GRADIENT</a>
-                    </li>
-                    <li>
-                        <a href="">CONTACT</a>
-                    </li>
-                    <li>
-                        <a href="">INFO</a>
-                    </li>
-                </ul>
+    <body>
+        <!-- feature box 페이지에서 그냥 가져옴 -->
+        <div class="feature-box" style="display: none">
+            <div class="fix-header">
+                ! New Feature:
+                <span href=""
+                    >You can now create a gradient out of 3 colors!</span
+                >
             </div>
-            <div class="btn-gen-side">
-            <button type="button" class="btn-gen"><i id="js-rotate" class="fa fa-times" aria-hidden="true" style="transform: rotate(45deg);"></i></button>
-            </div>
-        </section>
-      <section class="about">
-        <h3>Color Space</h3>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li class="logo"></li>
-        <li class="e-mail"><a href=""></a></li>
-        <li>copyright</li>
-        <li class="sns-link">
-          <a class="twitter" href=""><i></i></a>
-          <a class="fb" href=""><i></i></a>
-        </li>
-      </ul>
-      <!-- <a href="">CONTACT</a> -->
-    </footer>
-    <script src="./src/js/index.js"></script>
-  </body>
-
+        </div>
+        <!-- 모바일에서는 가림 -->
+        <div class="bg-default">
+            <header class="page-title">
+                <!-- 타이틀 로고 -->
+                <a href="/" class="logo">
+                    <img
+                        src="./src/img/two_planet.png"
+                        alt="color space logo"
+                        class="logo-img"
+                    />
+                    <h1 class="logo-text">ColorVerse</h1>
+                </a>
+                <!-- nav-bar -->
+                <nav class="nav-desktop" style="display: none">
+                    <ul>
+                        <li>
+                            <a href="/" class="nav-list">palletes</a>
+                        </li>
+                        <li>
+                            <a
+                                href="./src/pages/gradient2.html"
+                                class="nav-list active"
+                                >gradient</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./src/pages/gradient3.html"
+                                class="nav-list"
+                                >3-color-gradient</a
+                            ><span class="badge-new">new</span>
+                        </li>
+                        <li><a href="#" class="nav-list">contact</a></li>
+                        <li><a href="#" class="nav-list">info</a></li>
+                        <li>
+                            <a href="#" class="nav-list"
+                                ><i class="fab fa-twitter"></i
+                                ><span class="sr-only">twitter</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="color-get">
+                <h2>
+                    <p class="tit-sub" style="display: none">
+                        Never waste Hours on finding the perfect Color Palette
+                        again!
+                    </p>
+                    <p class="tit-main">Just Enter a Color!</p>
+                </h2>
+                <p>And Generate nice Color Palettes</p>
+                <form action="">
+                    <div class="color-input">
+                        <input
+                            class="color-pick"
+                            type="color"
+                            value="#051937"
+                        />
+                        <input
+                            class="color-code"
+                            type="text"
+                            value="#051937"
+                            maxlength="7"
+                        />
+                    </div>
+                    <button type="button" class="btn-gen">generate</button>
+                </form>
+            </section>
+        </div>
+        <main>
+            <section>
+                <h3 class="sr-only">recommended color</h3>
+                <article>
+                    <h4>Generic Gradient</h4>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </article>
+                <div class="btn-nav-side">
+                    <button type="button" class="btn-select">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <ul class="list-menu">
+                        <li>
+                            <a class="" href="/">PALETTES</a>
+                        </li>
+                        <li>
+                            <a href="">GRADIENT</a>
+                        </li>
+                        <li>
+                            <a href="">3-GRADIENT</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="">INFO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-gen-side">
+                    <button type="button" class="btn-gen">
+                        <i
+                            id="js-rotate"
+                            class="fa fa-times"
+                            aria-hidden="true"
+                            style="transform: rotate(45deg)"
+                        ></i>
+                    </button>
+                </div>
+            </section>
+            <section class="about">
+                <h3>Color Space</h3>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li class="logo"></li>
+                <li class="e-mail"><a href=""></a></li>
+                <li>copyright</li>
+                <li class="sns-link">
+                    <a class="twitter" href=""><i></i></a>
+                    <a class="fb" href=""><i></i></a>
+                </li>
+            </ul>
+            <!-- <a href="">CONTACT</a> -->
+        </footer>
+        <script src="./src/js/index.js"></script>
+    </body>
 </html>
