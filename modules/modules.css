@@ -1,6 +1,6 @@
-@import "./module_colorPicker/module_colorPicker.css";
-@import "./module_generateButton/module_generateButton.css";
+@import "./module_colorPicker/module-colorPicker.css";
+@import "./module_generateButton/module-generateButton.css";
 @import "./module_nav-bar/module_nav-bar.css";
 @import "./module_logo/module_logo.css";
 @import "./module_nav-btn/module_nav-btn.css";
-@import "./module_copy-btn/module_copy-btn.css";
+@import "./module_gradient-result/module_gradient-result.css";

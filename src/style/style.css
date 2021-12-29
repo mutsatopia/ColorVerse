@@ -3,87 +3,119 @@
 /* utility */
 
 body {
-    /* font-family: gmarket; */
-    font-weight: normal;
-    color: #fff;
+  font-family: gmarket;
+  font-weight: normal;
+  color: #fff;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.vsc-initialized{
-    background: linear-gradient(45deg, #7f48d8, #00c96b);
-    background-repeat: no-repeat;
+.vsc-initialized {
+  background: linear-gradient(45deg, #7f48d8, #00c96b);
+  background-repeat: no-repeat;
 }
 /* header */
 .feature-box {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    position: fixed;
-    width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  width: 100%;
 }
 .feature-box .fix-header {
-    font-weight: bold;
-    max-width: 1400px;
-    margin: 0 auto;
+  font-weight: bold;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .feature-box .fix-header span {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .bg-default {
-    height: 100vh;
+  height: 100vh;
 }
 .bg-default::after {
-    content:'';
-    display: inline-block;
-    background: url("../img/color-scheme-left.svg");
-    background-repeat: no-repeat;
-    width: 70%;
-    height: 70%;
+  content: "";
+  display: inline-block;
+  background: url("../img/color-scheme-left.svg");
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 70%;
 }
-.bg-default .color-get h2 .tit-main{
-    letter-spacing: 2px;
-    margin:10px 0;
+.bg-default .color-get h2 .tit-main {
+  letter-spacing: 2px;
+  margin: 10px 0;
 }
-.bg-default .color-get>p{
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+.bg-default .color-get > p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 .page-title {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    width: 100vw;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100vw;
+  margin: 0 auto;
 }
 .nav-desktop {
-    margin: auto 0;
+  margin: auto 0;
 }
 
 /* main */
 .color-get h2 {
-    width: 70vw;
-    margin: 0 auto;
-    font-family: "GmarketSansBold";
+  width: 70vw;
+  margin: 0 auto;
+  font-weight: bold;
 }
 .color-get h2 p {
-    margin: 0 auto;
-    color: #fff;
-    line-height: 1.2;
-    text-shadow: 2px 3px gray;
-    font-size: 3rem;
-    text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  line-height: 1.2;
+  text-shadow: 2px 3px gray;
+  font-size: 3rem;
+  text-align: center;
 }
 .color-get p {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.color-get form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.color-get form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.palettes {
+  background-color: #fff;
+  color: #000;
+  padding-top: 60px;
+}
+.palettes .wrapper-art {
+  margin: 0 auto;
+  width: 90%;
+}
+.palettes .art-rec .tit-art {
+  font-size: 20px;
+  font-weight: bold;
+}
+.palettes .art-rec .box-rec {
+  display: flex;
+  flex-direction: column;
+}
+.palettes .art-rec .box-rec-each {
+  display: flex;
+}
+.palettes .art-rec .box-rec-each .color {
+  display: block;
+  background-color: #845ec2;
+  width: 250px;
+  height: 80px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
+.palettes .art-rec .box-rec-each .name {
+  color: #696969;
 }
 
 /* palette 페이지 */
@@ -92,10 +124,8 @@ a {
 
 /* gradient3 페이지 */
 
-
-
 @media screen and (max-width: 640px) {
-    .bg-default .color-get h2 .tit-main{
-        font-size: 28px;
-    }
+  .bg-default .color-get h2 .tit-main {
+    font-size: 28px;
+  }
 }
