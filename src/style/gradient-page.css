@@ -1,23 +1,19 @@
-@import "reset.css";
-@import "font.css";
-@import "../../modules/modules.css";
+@charset "utf-8";
+@import "./default.css";
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+html {
+  font-size: 10px;
 }
 
 body {
+  min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 #app {
+  width: 95%;
   font-family: gmarket;
   font-weight: normal;
   color: #fff;
@@ -35,47 +31,54 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 50px;
-  margin-bottom: 65px;
+  padding: 2rem 0 0;
+  margin-bottom: 3rem;
 }
 
 .main-tit {
   text-align: center;
   font-weight: bold;
-  font-size: 2.2rem;
-  text-shadow: 2px 3px 0px #898999;
-  margin-bottom: 35px;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  text-shadow: 0.2rem 0.3rem 0px #898999;
+  padding: 0 0.6rem;
+  margin-bottom: 3.5rem;
 }
 
 .color-form {
   width: 100%;
 }
 .form-tit {
+  font-size: 1.4rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 35px;
-  font-weight: bold;
 }
 .orient-wrap {
-  width: 70%;
   margin: 0 auto;
+  width: 60%;
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
   flex-wrap: wrap;
+  gap: 1.2rem;
 }
 .orient-wrap .orient {
-  padding: 5px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 50%;
+  outline: 2px solid rgba(255, 255, 255, 0);
+  transition: outline 0.3s;
+  cursor: pointer;
 }
 
 input:checked + .orient {
-  outline: 2px solid white;
+  outline: 2px solid rgba(255, 255, 255, 1);
 }
 
 .orient .fa-arrow-up {
@@ -108,14 +111,16 @@ input:checked + .orient {
 }
 
 .colorpick .tit-colorpick {
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .link-3gradient {
   display: block;
   width: 130px;
-  margin: 20px auto 0;
+  margin: 0 auto 20px;
   font-size: 14px;
   font-weight: lighter;
   text-align: center;
@@ -125,4 +130,19 @@ input:checked + .orient {
 }
 .link-3gradient:hover {
   opacity: 1;
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+  .orient-wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    margin-bottom: 6rem;
+  }
 }
