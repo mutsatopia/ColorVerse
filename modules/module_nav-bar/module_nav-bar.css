@@ -1,39 +1,66 @@
-.nav-desktop ul {
-    display: flex;
+.nav-desktop {
+  font-size: 15px;
 }
+.nav-desktop ul {
+  display: flex;
+}
+
+.has-badge {
+  position: relative;
+}
+.badge-new {
+  width: 38px;
+  height: 16px;
+  position: absolute;
+  top: -10px;
+  right: 8px;
+}
+
 .nav-list {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 0;
-    position: relative;
+  display: inline-block;
+  margin: 0 8px;
+  padding: 10px 0;
+  position: relative;
 }
 .nav-list::after,
 .nav-list::before {
-    content: "";
-    width: 0;
-    height: 3px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .nav-list::before {
-    background-color: #845ec2;
-    transition: width 0.4s 0.1s;
+  background-color: #845ec2;
+  transition: width 0.4s 0.1s;
 }
 .nav-list::after {
-    background-color: #2fffad;
-    transition: width 0.3s;
+  background-color: #2fffad;
+  transition: width 0.3s;
 }
 .nav-list:hover::after,
 .nav-list:hover::before {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 .nav-list.active:after {
-    width: 100%;
-    background-color: #2fffad;
-    left: 0;
+  width: 100%;
+  background-color: #2fffad;
+  left: 0;
 }
 .nav-list.active:before {
-    z-index: 10;
+  z-index: 10;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .nav-desktop {
+    font-size: 18px;
+  }
 }
