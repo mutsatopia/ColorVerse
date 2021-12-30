@@ -77,30 +77,32 @@
       </section>
     </div>
     <section class="sect-side">
-      <div class="btn-nav-side">
-        <button type="button" class="btn-select">
+      <div class="nav-side">
+        <button type="button" class="nav-side-btn">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-        <ul class="list-menu">
-          <li>
-            <a class="" href="/">PALETTES</a>
-          </li>
-          <li>
-            <a href="">GRADIENT</a>
-          </li>
-          <li>
-            <a href="">3-GRADIENT</a>
-          </li>
-          <li>
-            <a href="">CONTACT</a>
-          </li>
-          <li>
-            <a href="">INFO</a>
-          </li>
-        </ul>
+        <nav class="nav-side-list">
+          <ul>
+            <li>
+              <a class="" href="/">PALETTES</a>
+            </li>
+            <li>
+              <a href="">GRADIENT</a>
+            </li>
+            <li>
+              <a href="">3-GRADIENT</a>
+            </li>
+            <li>
+              <a href="">CONTACT</a>
+            </li>
+            <li>
+              <a href="">INFO</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="btn-gen-side">
-        <button type="button" class="btn-gen">
+      <div class="gen-side">
+        <button type="button" class="gen-side-btn">
           <i
             id="js-rotate"
             class="fa fa-times"
@@ -120,12 +122,30 @@
               <div class="box-rec-each">
                 <div class="color"></div>
                 <input
-                  class="name selectable"
-                  type="text"
-                  readonly="readonly"
-                  value="#845ec2"
+                class="name selectable"
+                type="text"
+                readonly="readonly"
+                value="#845ec2"
                 />
               </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                class="name selectable"
+                type="text"
+                readonly="readonly"
+                value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                class="name selectable"
+                type="text"
+                readonly="readonly"
+                  value="#845ec2"
+                  />
+                </div>
               <div class="box-rec-each">
                 <div class="color"></div>
                 <input
@@ -133,38 +153,29 @@
                   type="text"
                   readonly="readonly"
                   value="#845ec2"
-                />
+                  />
+                </div>
               </div>
-              <div class="box-rec-each">
-                <div class="color"></div>
-                <input
-                  class="name selectable"
-                  type="text"
-                  readonly="readonly"
-                  value="#845ec2"
-                />
-              </div>
-              <div class="box-rec-each">
-                <div class="color"></div>
-                <input
-                  class="name selectable"
-                  type="text"
-                  readonly="readonly"
-                  value="#845ec2"
-                />
-              </div>
-            </div>
-          </article>
-          <article class="art-rec">
-            <h4 class="tit-art">Generic Gradient</h4>
+            </article>
+            <article class="art-rec">
+              <h4 class="tit-art">Generic Gradient</h4>
             <div class="box-rec">
               <div class="box-rec-each">
                 <div class="color"></div>
                 <input
-                  class="name selectable"
-                  type="text"
-                  readonly="readonly"
-                  value="#845ec2"
+                class="name selectable"
+                type="text"
+                readonly="readonly"
+                value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                class="name selectable"
+                type="text"
+                readonly="readonly"
+                value="#845ec2"
                 />
               </div>
               <div class="box-rec-each">
@@ -174,7 +185,7 @@
                   type="text"
                   readonly="readonly"
                   value="#845ec2"
-                />
+                  />
               </div>
               <div class="box-rec-each">
                 <div class="color"></div>
@@ -183,16 +194,7 @@
                   type="text"
                   readonly="readonly"
                   value="#845ec2"
-                />
-              </div>
-              <div class="box-rec-each">
-                <div class="color"></div>
-                <input
-                  class="name selectable"
-                  type="text"
-                  readonly="readonly"
-                  value="#845ec2"
-                />
+                  />
               </div>
             </div>
           </article>
@@ -243,6 +245,7 @@
     <script src="./src/js/index.js"></script>
     <script src="./modules/module_colorPicker/module-colorPicker.js"></script>
     <script src="./modules/module_generateButton/module-generateButton.js"></script>
+    <script src="./modules/module_nav-btn/module_nav-btn.js"></script>
   </body>
 
 </html>
