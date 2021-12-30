@@ -5,17 +5,17 @@
   align-items: center;
 }
 
-.logo-img {
+.logo .logo-img {
   width: 45px;
   height: 45px;
 }
-.logo-text {
+.logo .logo-text {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
   margin-left: 5px;
 }
-.logo-text::after {
+/* .logo-text::after {
   content: "Beta";
   color: #fff;
   background-color:rgb(235, 97, 212);
@@ -26,4 +26,9 @@
   position: relative;
   left: -10px;
   top: -15px;
+} */
+.logo .beta-img {
+  position: absolute;
+  left: 140px;
+  top: -4px;
 }

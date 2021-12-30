@@ -28,11 +28,12 @@ a {
   margin: 0 auto;
 }
 .feature-box .fix-header span {
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 .bg-default {
   height: 100vh;
+  background: linear-gradient(45deg, #00c96b, #7f48d8);
 }
 .bg-default::after {
   content: "";
@@ -55,7 +56,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  width: 100vw;
   margin: 0 auto;
 }
 .nav-desktop {
@@ -86,16 +86,23 @@ a {
   align-items: center;
 }
 
+/* 추천 팔레트 영역 */
 .palettes {
   background-color: #fff;
   color: #000;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 .palettes .wrapper-art {
   margin: 0 auto;
   width: 90%;
+  max-width: 400px;
+  /* 미디어쿼리 처리해야함 모바일에서만 90%*/
+}
+.palettes .art-rec {
+  padding: 30px;
 }
 .palettes .art-rec .tit-art {
+  margin-bottom: 30px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -115,7 +122,15 @@ a {
   border-radius: 7px;
 }
 .palettes .art-rec .box-rec-each .name {
+  margin-left: 20px;
   color: #696969;
+  text-transform: uppercase;
+  text-align: center;
+  width: 120px;
+  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 200%;
+  min-height: 20px;
 }
 
 /* palette 페이지 */
