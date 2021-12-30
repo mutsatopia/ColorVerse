@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ColorVerse</title>
     <link rel="stylesheet" href="./src/style/default.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
   </head>
 
   <body>
     <!-- feature box 페이지에서 그냥 가져옴 -->
     <div class="feature-box" style="display: none">
-      <div class="fix-header">
-        ! New Feature:
-        <span href="">You can now create a gradient out of 3 colors!</span>
+      <div class="fix-header"> ! New Feature: <span href="">You can now create a gradient out of 3
+          colors!</span>
       </div>
     </div>
     <!-- 모바일에서는 가림 -->
     <div class="bg-default">
       <header class="page-title">
         <!-- 타이틀 로고 -->
+<<<<<<< HEAD
         <a href="/" class="logo has-badge">
           <img
             src="../../src/img/two_planet.png"
             alt="color space logo"
             class="logo-img"
           />
+=======
+        <a href="/" class="logo">
+          <img src="./src/img/two_planet.png" alt="color space logo" class="logo-img" />
+>>>>>>> f17dd55... 💄 footer UI 개선
           <h1 class="logo-text">ColorVerse</h1>
           <img
             src="../../src/img/BetaImage.png"
@@ -46,43 +48,32 @@
               <a href="/" class="nav-list">palletes</a>
             </li>
             <li>
-              <a href="./src/pages/gradient2.html" class="nav-list active"
-                >gradient</a
-              >
+              <a href="./src/pages/gradient2.html" class="nav-list active">gradient</a>
             </li>
             <li class="has-badge">
-              <a href="./src/pages/gradient3.html" class="nav-list"
-                >3-color-gradient</a
-              ><span class="badge-new">new</span>
+              <a href="./src/pages/gradient3.html" class="nav-list">3-color-gradient</a><span
+                class="badge-new">new</span>
             </li>
             <li><a href="#" class="nav-list">contact</a></li>
             <li><a href="#" class="nav-list">info</a></li>
             <li>
-              <a href="#" class="nav-list"
-                ><i class="fab fa-twitter"></i
-                ><span class="sr-only">twitter</span></a
-              >
+              <a href="#" class="nav-list"><i class="fab fa-twitter"></i><span
+                  class="sr-only">twitter</span></a>
             </li>
           </ul>
         </nav>
       </header>
       <section class="color-get">
         <h2>
-          <p class="tit-sub" style="display: none">
-            Never waste Hours on finding the perfect Color Palette again!
-          </p>
+          <p class="tit-sub"> Never waste Hours on finding the perfect Color
+            Palette again! </p>
           <p class="tit-main">JUST ENTER A COLOR!</p>
         </h2>
         <p>And Generate nice Color Palettes</p>
         <form action="">
           <div class="color-input">
             <input class="color-pick" type="color" value="#051937" />
-            <input
-              class="color-code"
-              type="text"
-              value="#051937"
-              maxlength="7"
-            />
+            <input class="color-code" type="text" value="#051937" maxlength="7" />
           </div>
           <button type="button" class="btn-gen">generate</button>
         </form>
@@ -210,38 +201,49 @@
           </article>
         </div>
       </section>
-      <section class="sect-about">
-        <h3>Color Space</h3>
+      <section class="about">
+        <div>
+          <h3>Color Space</h3>
+          <strong>Color Palettes Generator</strong>
+          <em>Your space for everything that has to do with color</em>
+          <p>We have set ourselves the task to create one place where you can find matching colors, generate nice color palettes and learn more about color conversions and meaning. Sometimes it is hard to find inspiration for a good color scheme or you do not have the time to experiment until you find matching colors. To facilitate this process, we investigated this set of tools and want to share it with you.
+          </p>
+          <p>Feel free to use the color palettes or gradients in your project. If you want, you can recommend our site or refer it to your friends and workmates. We are always happy to hear from you.</p>
+          <p>Our collection of tools has just been released and is currently in beta. At the moment, you can generate color palettes or create nice CSS gradients from colors of your choice. A whole new set of different tools is currently in work. There will also be an App for Android. If you want to stay up to date, have any questions, or even suggestions, please do not hesitate to <a href="https://github.com/mutsatopia/ColorVerse">contact us!</a></p>
+        </div>
+        <img src="./src/img/spacecraft.svg" alt="" />
       </section>
     </main>
     <footer>
-      <ul>
-        <li>
+      <div class="footer">
+        <ul class="nav">
+          <li>
             <!-- 로고 모듈 -->
-          <a href="/" class="logo">
-            <img
-              src="./src/img/two_planet.png"
-              alt="color space logo"
-              class="logo-img"
-            />
-            <h1 class="logo-text">ColorVerse</h1>
-          </a>
-        </li>
-        <div >
-            <li class="github">깃헙</li>
-            <li class="github"><a href="https://github.com/HojinAn"><i class="fab fa-github"></i>안호진</a></li>
-            <li class="github"><a href="https://github.com/vnfdusdl"><i class="fab fa-github"></i>이초연</a></li>
-            <li class="github"><a href="https://github.com/Chun-gu"><i class="fab fa-github"></i>이춘구</a></li>
-            <li class="github"><a href="https://github.com/searchmoon"><i class="fab fa-github"></i>문정은</a></li>
-            
-        </div><li class="sns-link">
-          <a class="twitter" href=""><i></i></a>
-          <a class="fb" href=""><i></i></a>
-        </li>
-      </ul>
-      <a href="">CONTACT</a>
+            <a href="/" class="logo">
+              <img src="./src/img/two_planet.png" alt="color space logo" class="logo-img" />
+              <h1 class="logo-text">ColorVerse</h1>
+            </a>
+          </li>
+          <li>
+            <ul class="github">
+              <li>GitHub <i class="fab fa-github"></i></li>
+              <li><a href="https://github.com/HojinAn">안호진 |</a></li>
+              <li><a href="https://github.com/vnfdusdl"></i>이초연 |</a></li>
+              <li><a href="https://github.com/Chun-gu"></i>이춘구 |</a></li>
+              <li><a href="https://github.com/searchmoon"></i>문정은</a></li>
+            </ul>
+          </li>
+          <li class="sns-link">
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+        <a href="" class="nav-list">CONTACT</a>
+      </div>
       <!-- 모듈 따오기 -->
     </footer>
     <script src="./src/js/index.js"></script>
   </body>
+
 </html>
