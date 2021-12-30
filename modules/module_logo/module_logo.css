@@ -15,15 +15,4 @@
   color: #fff;
   margin-left: 5px;
 }
-.logo-text::after {
-  content: "Beta";
-  color: #fff;
-  background-color:rgb(235, 97, 212);
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-size: 9px;
-  font-weight: bold;
-  position: relative;
-  left: -10px;
-  top: -15px;
-}
+
