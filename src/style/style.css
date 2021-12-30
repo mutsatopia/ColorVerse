@@ -37,7 +37,7 @@ a {
 .bg-default::after {
   content: "";
   display: inline-block;
-  background: url("../img/color-scheme-left.svg");
+  /* background: url("../img/color-scheme-left.svg"); */
   background-repeat: no-repeat;
   width: 70%;
   height: 70%;
@@ -54,8 +54,8 @@ a {
 .page-title {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
-  width: 100vw;
+  padding: 30px 50px;
+  width: 100%;
   margin: 0 auto;
 }
 .nav-desktop {
@@ -73,12 +73,17 @@ a {
   color: #fff;
   line-height: 1.2;
   text-shadow: 2px 3px gray;
-  font-size: 3rem;
   text-align: center;
+}
+.color-get h2 .tit-sub {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+.color-get h2 .tit-main {
+  font-size: 35px;
 }
 .color-get p {
   text-align: center;
-  margin-bottom: 50px;
 }
 .color-get form {
   display: flex;
@@ -118,6 +123,100 @@ a {
   color: #696969;
 }
 
+/* section- about*/
+main .about {
+  display: flex;
+}
+main .about div,
+main .about img {
+  width: 50%;
+  padding: 50px;
+}
+main .about div h3,
+main .about div strong,
+main .about div em {
+  margin: 0 auto;
+  color: #fff;
+  line-height: 1.2;
+  text-shadow: 2px 3px gray;
+  text-align: center;
+  font-weight: bold;
+}
+main .about div h3{
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+main .about div strong {
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+main .about div em {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+main .about div p {
+  margin-bottom: 20px;
+}
+main .about img {
+  max-width: 600px;
+}
+/* footer */
+footer {
+  border-top: 1px solid #aaa;
+}
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+}
+.footer .nav {
+  display: flex;
+  align-items: center;
+}
+.footer .logo{}
+.footer .logo img{}
+.footer .logo h1{}
+.footer .github {
+  display: flex;
+  /* align-items: center; */
+  margin-left: 30px;
+  
+}
+/* .footer .github li::after{
+  display: block;
+  content: '';
+  width: 15px;
+  height: 14px;
+  color: #fff;
+  position: relative;
+  right: 10px;
+  z-index: 10;
+} */
+.footer .github li{
+  margin-left: 4px;
+  align-items: center;
+}
+.footer .github li a{
+  line-height: 19px;
+}
+.footer .github li:first-child{
+  margin-right: 10px;
+}
+.footer .sns-link {
+  margin-left: 20px;
+}
+.footer .sns-link a{
+  margin: 0 5px;
+}
+
+
+
+
+
+
 /* palette 페이지 */
 
 /* gradien2 페이지 */
@@ -127,5 +226,17 @@ a {
 @media screen and (max-width: 640px) {
   .bg-default .color-get h2 .tit-main {
     font-size: 28px;
+  }
+
+  /* 메인페이지 */
+  .color-get .tit-sub {
+    display: none;
+
+  }
+  .color-get .tit-main {
+    font-size: 28px;
+  }
+  main .about {
+    flex-direction: column;
   }
 }
