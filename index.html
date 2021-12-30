@@ -23,25 +23,16 @@
     <div class="bg-default">
       <header class="page-title">
         <!-- 타이틀 로고 -->
-<<<<<<< HEAD
         <a href="/" class="logo has-badge">
-          <img
-            src="../../src/img/two_planet.png"
-            alt="color space logo"
-            class="logo-img"
-          />
-=======
-        <a href="/" class="logo">
           <img src="./src/img/two_planet.png" alt="color space logo" class="logo-img" />
->>>>>>> f17dd55... 💄 footer UI 개선
           <h1 class="logo-text">ColorVerse</h1>
           <img
-            src="../../src/img/BetaImage.png"
+            src="./src/img/BetaImage.png"
             alt="Beta version"
             class="beta-img"
           />
         </a>
-        <!-- nav-bar -->
+        <!-- navigation bar -->
         <nav class="nav-desktop">
           <ul>
             <li>
@@ -51,14 +42,20 @@
               <a href="./src/pages/gradient2.html" class="nav-list active">gradient</a>
             </li>
             <li class="has-badge">
-              <a href="./src/pages/gradient3.html" class="nav-list">3-color-gradient</a><span
-                class="badge-new">new</span>
+              <img
+                class="badge-new"
+                src="./src/img/badge-new.png"
+                alt="new feature"
+              />
+              <a href="./src/pages/gradient3.html" class="nav-list">3-color-gradient</a>
             </li>
             <li><a href="#" class="nav-list">contact</a></li>
             <li><a href="#" class="nav-list">info</a></li>
             <li>
-              <a href="#" class="nav-list"><i class="fab fa-twitter"></i><span
-                  class="sr-only">twitter</span></a>
+              <a href="#" class="nav-list"
+                ><i class="fab fa-twitter"></i
+                ><span class="sr-only">twitter</span></a
+              >
             </li>
           </ul>
         </nav>
@@ -244,6 +241,8 @@
       <!-- 모듈 따오기 -->
     </footer>
     <script src="./src/js/index.js"></script>
+    <script src="./modules/module_colorPicker/module-colorPicker.js"></script>
+    <script src="./modules/module_generateButton/module-generateButton.js"></script>
   </body>
 
 </html>
