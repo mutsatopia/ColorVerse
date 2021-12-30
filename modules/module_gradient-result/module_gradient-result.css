@@ -1,8 +1,10 @@
 .result {
-  margin: 40px auto 0;
-  width: 500px;
+  margin: 0px auto;
+  width: 80%;
+  max-width: 500px;
 }
 .result-tit {
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .result-wrap {
