@@ -141,6 +141,7 @@ a {
 /* section- about*/
 main .about {
   display: flex;
+  height: 900px;
 }
 main .about div,
 main .about img {
@@ -154,7 +155,6 @@ main .about div em {
   color: #fff;
   line-height: 1.2;
   text-shadow: 2px 3px gray;
-  text-align: center;
   font-weight: bold;
 }
 main .about div h3 {
@@ -163,7 +163,7 @@ main .about div h3 {
 }
 main .about div strong {
   font-size: 26px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 main .about div em {
   font-size: 20px;
