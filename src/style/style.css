@@ -76,7 +76,7 @@ a {
   text-align: center;
 }
 .color-get h2 .tit-sub {
-  font-size: 42px;
+  font-size: 30px;
   margin-bottom: 50px;
 }
 .color-get h2 .tit-main {
@@ -99,9 +99,6 @@ a {
 }
 .palettes .wrapper-art {
   margin: 0 auto;
-  width: 90%;
-  max-width: 400px;
-  /* 미디어쿼리 처리해야함 모바일에서만 90%*/
 }
 .palettes .art-rec {
   padding: 30px;
@@ -110,28 +107,32 @@ a {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 .palettes .art-rec .box-rec {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
+
 .palettes .art-rec .box-rec-each {
   display: flex;
+  width: 100px;
+  flex-direction: column;
+  align-items: center;
 }
 .palettes .art-rec .box-rec-each .color {
   display: block;
-  background-color: #845ec2;
-  width: 250px;
+  width: 80px;
   height: 80px;
+  background-color: #845ec2;
   margin-bottom: 5px;
   border-radius: 7px;
 }
 .palettes .art-rec .box-rec-each .name {
-  margin-left: 20px;
   color: #696969;
   text-transform: uppercase;
   text-align: center;
-  width: 120px;
+  width: 80px;
   display: inline-block;
   letter-spacing: 1px;
   line-height: 200%;
@@ -252,5 +253,27 @@ a {
   .about .bt-left,
   .about .bt-right {
     width: 100%;
+  }
+  .palettes .art-rec .box-rec {
+    flex-direction: column;
+  }
+  .palettes .art-rec .box-rec-each {
+    flex-direction: row;
+    width: auto;
+  }
+  .palettes .art-rec .box-rec-each .color {
+    width: 250px;
+    height: 80px;
+  }
+  .palettes .art-rec .box-rec-each .name {
+    width: 120px;
+  }
+  .palettes .wrapper-art {
+    width: 90%;
+    max-width: 400px;
+    /* 미디어쿼리 처리해야함 모바일에서만 90%*/
+  }
+  .palettes .art-rec .box-rec-each .name {
+    margin-left: 20px;
   }
 }
