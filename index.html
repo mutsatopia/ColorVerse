@@ -23,21 +23,15 @@
       </div>
     </div>
     <!-- 모바일에서는 가림 -->
-    <div class="bg-default">
+    <div class="bg-wrap">
+      <div class="bg-color"></div>
+      <div class="bg-default">
       <header class="page-title">
         <!-- 타이틀 로고 -->
         <a href="/" class="logo has-badge">
-          <img
-            src="./src/img/two_planet.png"
-            alt="color space logo"
-            class="logo-img"
-          />
+          <img src="./src/img/two_planet.png" alt="color space logo" class="logo-img" />
           <h1 class="logo-text">ColorVerse</h1>
-          <img
-            src="./src/img/BetaImage.png"
-            alt="Beta version"
-            class="beta-img"
-          />
+          <img src="./src/img/BetaImage.png" alt="Beta version" class="beta-img" />
         </a>
         <!-- navigation bar -->
         <nav class="nav-desktop">
@@ -61,10 +55,8 @@
             <li><a href="#" class="nav-list">contact</a></li>
             <li><a href="#" class="nav-list">info</a></li>
             <li>
-              <a href="#" class="nav-list"
-                ><i class="fab fa-twitter"></i
-                ><span class="sr-only">twitter</span></a
-              >
+              <a href="#" class="nav-list"><i class="fab fa-twitter"></i><span
+                  class="sr-only">twitter</span></a>
             </li>
           </ul>
         </nav>
@@ -90,13 +82,14 @@
           </div>
         </section>
         <div class="wrap-gen">
-          <button type="button" class="btn-gen" onclick="generate(`gradient`)">
+          <button type="button" class="btn-gen">
             <i class="fas fa-rocket"></i>
             generate
           </button>
         </div>
       </form>
     </div>
+    <!-- side button -->
     <section class="sect-side">
       <div class="nav-side">
         <button type="button" class="nav-side-btn">
@@ -124,20 +117,16 @@
       </div>
       <div class="gen-side">
         <button type="button" class="gen-side-btn">
-          <i
-            id="js-rotate"
-            class="fa fa-times"
-            aria-hidden="true"
-            style="transform: rotate(45deg)"
-          ></i>
+          <i id="js-rotate" class="fa fa-times" aria-hidden="true"
+            style="transform: rotate(45deg)"></i>
         </button>
       </div>
     </section>
-    <main>
+    <main class="hide">
       <section class="palettes">
         <h3 class="sr-only">recommended color</h3>
         <div class="wrapper-art">
-          <article class="art-rec">
+          <article class="art-rec js-scroll fade-in-bottom">
             <h4 class="tit-art">Generic Gradient</h4>
             <div class="box-rec">
               <div class="box-rec-each">
@@ -178,7 +167,225 @@
               </div>
             </div>
           </article>
-          <article class="art-rec">
+          <article class="art-rec js-scroll fade-in-bottom">
+            <h4 class="tit-art">Generic Gradient</h4>
+            <div class="box-rec">
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+            </div>
+          </article>
+          <article class="art-rec js-scroll fade-in-bottom">
+            <h4 class="tit-art">Generic Gradient</h4>
+            <div class="box-rec">
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+            </div>
+          </article>
+          <article class="art-rec js-scroll fade-in-bottom">
+            <h4 class="tit-art">Generic Gradient</h4>
+            <div class="box-rec">
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+            </div>
+          </article>
+          <article class="art-rec js-scroll fade-in-bottom">
+            <h4 class="tit-art">Generic Gradient</h4>
+            <div class="box-rec">
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+              <div class="box-rec-each">
+                <div class="color"></div>
+                <input
+                  class="name selectable"
+                  type="text"
+                  readonly="readonly"
+                  value="#845ec2"
+                />
+              </div>
+            </div>
+          </article>
+          <article class="art-rec js-scroll fade-in-bottom">
             <h4 class="tit-art">Generic Gradient</h4>
             <div class="box-rec">
               <div class="box-rec-each">
@@ -249,7 +456,7 @@
         </div>
       </section>
     </main>
-    <div class="bg-bottom">
+    <div class="bg-bottom hide">
       <section class="about">
         <div class="bt-left">
           <h3>Color Space</h3>
@@ -271,39 +478,34 @@
           </p>
           <p>
             Our collection of tools has just been released and is currently in
-            beta. At the moment, you can generate color palettes or create nice
-            CSS gradients from colors of your choice. A whole new set of
+            beta. At the moment, you can generate color palettes or <a href="./src/pages/gradient2.html">create nice CSS gradients</a> from colors of your choice. A whole new set of
             different tools is currently in work. There will also be an App for
             Android. If you want to stay up to date, have any questions, or even
             suggestions, please do not hesitate to
             <a href="https://github.com/mutsatopia/ColorVerse">contact us!</a>
           </p>
         </div>
-        <div class="bt-right">
-          <img src="./src/img/spacecraft.svg" alt="spacecraft" />
+        <div class="bt-right float-box">
+          <img src="./src/img/spacecraft.svg" alt="spacecraft" class="floating" />
         </div>
       </section>
       <footer>
         <div class="footer">
           <ul class="nav">
             <li>
-              <!-- 로고 모듈 -->
-              <a href="/" class="logo">
-                <img
-                  src="./src/img/two_planet.png"
-                  alt="color space logo"
-                  class="logo-img"
-                />
+              <a href="/" class="logo has-badge">
+                <img src="./src/img/two_planet.png" alt="color space logo" class="logo-img" />
                 <h1 class="logo-text">ColorVerse</h1>
+                <img src="../../src/img/BetaImage.png" alt="Beta version" class="beta-img"/>
               </a>
             </li>
             <li>
               <ul class="github">
                 <li>GitHub <i class="fab fa-github"></i></li>
-                <li><a href="https://github.com/HojinAn">안호진 |</a></li>
-                <li><a href="https://github.com/vnfdusdl">이초연 |</a></li>
-                <li><a href="https://github.com/Chun-gu">이춘구 |</a></li>
-                <li><a href="https://github.com/searchmoon">문정은</a></li>
+                <li><a href="https://github.com/HojinAn">안호진</a></li>
+                <li><a href="https://github.com/vnfdusdl"></i>김초연</a></li>
+                <li><a href="https://github.com/Chun-gu"></i>이춘구</a></li>
+                <li><a href="https://github.com/searchmoon"></i>문정은</a></li>
               </ul>
             </li>
             <li class="sns-link">
@@ -312,10 +514,13 @@
               <a href=""><i class="fab fa-instagram"></i></a>
             </li>
           </ul>
-          <a href="" class="nav-list">CONTACT</a>
+          <a href="" class="nav-list">contact</a>
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/index.js"></script>
     <script src="./modules/module_colorPicker/module-colorPicker.js"></script>
     <script src="./modules/module_generateButton/module-generateButton.js"></script>
     <script src="./modules/module_nav-btn/module_nav-btn.js"></script>
