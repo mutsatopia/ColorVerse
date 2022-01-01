@@ -1,18 +1,20 @@
 const navBtn = document.querySelector(".nav-side-btn");
 const navList = document.querySelector(".nav-side-list");
+const genSide = document.querySelector(".gen-side");
 
-navList.style.display = "none";
-let flag = false;
+let switchFlag = false;
 navBtn.addEventListener("click", () => {
-  navList.style.display = "block";
-  if (!flag) {
+  if (!switchFlag) {
     navList.classList.add("on");
-    flag = true;
-    console.log(flag);
+    navList.classList.remove("off");
+    switchFlag = true;
+    genSide.classList.add("on");
+    genSide.classList.remove("off");
   } else {
+    navList.classList.add("off");
     navList.classList.remove("on");
-    navList.setAttribute("animation", "slide-in-left 1s ease-in-out both;");
-    flag = false;
-    console.log(flag);
+    switchFlag = false;
+    genSide.classList.add("off");
+    genSide.classList.remove("on");
   }
 });
