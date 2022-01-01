@@ -6,15 +6,15 @@ let switchFlag = false;
 navBtn.addEventListener("click", () => {
   if (!switchFlag) {
     navList.classList.add("on");
-    genSide.classList.add("on");
     navList.classList.remove("off");
-    genSide.classList.remove("off");
     switchFlag = true;
+    genSide.classList.add("on");
+    genSide.classList.remove("off");
   } else {
     navList.classList.add("off");
-    genSide.classList.add("off");
     navList.classList.remove("on");
-    genSide.classList.remove("on");
     switchFlag = false;
+    genSide.classList.add("off");
+    genSide.classList.remove("on");
   }
 });
