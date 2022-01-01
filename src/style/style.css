@@ -37,19 +37,19 @@ a {
 .feature-box .fix-header span {
   font-weight: lighter;
 }
-.bg-wrap{
+.bg-wrap {
   height: 100vh;
   position: relative;
 }
-.bg-color{
+.bg-color {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(45deg, #00c96b, #6513e9);
   position: absolute;
   z-index: -10;
 }
-.bg-color.changed{
-  background: linear-gradient(45deg, #845EC2, #FF9671, #F9F871);
+.bg-color.changed {
+  background: linear-gradient(45deg, #845ec2, #ff9671, #f9f871);
 }
 .bg-default {
   height: 100vh;
@@ -119,7 +119,7 @@ a {
 .palettes {
   background-color: #fff;
   color: #000;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .palettes .wrapper-art {
@@ -163,72 +163,58 @@ a {
   line-height: 200%;
   min-height: 20px;
 }
-/* bottom-box*/
-.bottom-box {
-  background: linear-gradient(45deg, #7f48d8, #00c96b);
+.bg-bottom {
+  background: linear-gradient(45deg, #00c96b, #7f48d8);
 }
-.bottom-box .about {
+
+/* section- about*/
+.about {
   display: flex;
-  padding: 100px;
-  min-height: 1000px;
+  padding: 100px 5%;
 }
-
-.bottom-box .about div {
+.about .bt-left,
+.about .bt-right {
   width: 50%;
-  height: 100%;
+  padding: 0 50px;
 }
-.bottom-box .about .float-box {
-  position: relative;
-  height: 100%;
-}
-.bottom-box .about div .floating {
-  /* height: 100%; */
-  position: absolute;
-}
-
-.bottom-box .about div h3,
-.bottom-box .about div strong,
-.bottom-box .about div em {
+.about .bt-left h3,
+.about .bt-left strong,
+.about .bt-left em {
+  margin: 0 auto;
   color: #fff;
   line-height: 1.4;
   text-shadow: 2px 3px gray;
   font-weight: bold;
+  display: block;
 }
-
-.bottom-box .about div h3 {
+.about .bt-left h3 {
   font-size: 38px;
   margin-bottom: 20px;
 }
-
-.bottom-box .about div strong {
+.about .bt-left strong {
   font-size: 26px;
 }
-
-.bottom-box .about div em {
+.about .bt-left em {
   font-size: 20px;
   margin: 15px 0;
   display: inline-block;
 }
-
-.bottom-box .about div p {
+.about .bt-left p {
   margin-bottom: 20px;
   line-height: 1.5;
 }
-.bottom-box .about div p a {
+.about /.bt-left p a {
   color: aqua;
   border-bottom: 1px solid aqua;
 }
-
-.bottom-box .about img {
+.about .bt-right img {
   max-width: 600px;
-  margin-left: 50px;
 }
 
 /* footer */
-footer {
-  border-top: 1px solid #aaa;
-}
+
 .footer {
+  border-top: 1px solid #aaa;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -252,7 +238,7 @@ footer {
   align-items: center;
 }
 
-.footer .github li:not(:first-child,:last-child)::after {
+.footer .github li:not(:first-child, :last-child)::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -338,6 +324,16 @@ footer {
   .color-get .tit-main {
     font-size: 28px;
   }
+  .about {
+    flex-direction: column;
+  }
+  .about .bt-left {
+    margin-bottom: 50px;
+  }
+  .about .bt-left,
+  .about .bt-right {
+    width: 100%;
+  }
   .palettes .art-rec .box-rec {
     flex-direction: column;
   }
@@ -370,5 +366,30 @@ footer {
   /* footer */
   .footer {
     padding: 20px 10px;
+  }
+}
+
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.js-scroll.scrolled {
+  opacity: 1;
+}
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
