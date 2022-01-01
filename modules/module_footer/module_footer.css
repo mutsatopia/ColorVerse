@@ -1,0 +1,87 @@
+/* footer */
+footer {
+  border-top: 1px solid #aaa;
+}
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+}
+
+.footer .nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer .github {
+  display: flex;
+  margin-left: 30px;
+}
+
+.footer .github li {
+  margin-left: 4px;
+  align-items: center;
+}
+
+.footer .github li:not(:first-child,:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  margin: 0 3px 0 10px;
+  vertical-align: middle;
+}
+
+.footer .github li a {
+  line-height: 19px;
+}
+
+.footer .github li:first-child {
+  margin-right: 10px;
+}
+
+.footer .sns-link {
+  margin-left: 20px;
+}
+
+.footer .sns-link a {
+  margin: 0 5px;
+}
+.footer .nav-list {
+  margin: 0;
+  padding: 14px 0 0 0;
+}
+
+
+@media screen and (max-width: 900px) {
+  /* footer */
+  .footer .nav {
+    margin: 0 auto;
+  }
+  .footer .nav-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* footer */
+  .footer .nav {
+    flex-direction: column;
+  }
+  .footer .nav li .github {
+    padding: 10px 0 20px;
+  }
+  .footer .nav li .github,
+  .footer .nav li .sns-link {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 20px 10px;
+  }
+}

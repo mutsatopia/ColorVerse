@@ -11,10 +11,15 @@ body {
 a {
   text-decoration: none;
 }
+.hide {
+  display: none;
+}
+
 .vsc-initialized {
-  background: linear-gradient(45deg, #7f48d8, #00c96b);
+  background: linear-gradient(45deg, #4407a7, #00c96b);
   background-repeat: no-repeat;
 }
+
 /* header */
 .feature-box {
   padding: 10px;
@@ -22,42 +27,54 @@ a {
   position: fixed;
   width: 100%;
 }
+
 .feature-box .fix-header {
   font-weight: bold;
   max-width: 1400px;
   margin: 0 auto;
 }
+
 .feature-box .fix-header span {
   font-weight: lighter;
 }
-
+.bg-wrap{
+  height: 100vh;
+  position: relative;
+}
+.bg-color{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #00c96b, #6513e9);
+  position: absolute;
+  z-index: -10;
+}
+.bg-color.changed{
+  background: linear-gradient(45deg, #845EC2, #FF9671, #F9F871);
+}
 .bg-default {
   height: 100vh;
-  background: linear-gradient(45deg, #00c96b, #7f48d8);
-}
-.bg-default::after {
-  content: "";
-  display: inline-block;
-  background: url("../img/color-scheme-left.svg");
-  background-repeat: no-repeat;
-  width: 70%;
-  height: 70%;
+  background: url("../img/color-scheme-left.svg") no-repeat bottom left,
+    url("../img/color-scheme-right.svg") no-repeat bottom right;
+  background-size: 40vw;
 }
 .bg-default .color-get h2 .tit-main {
   letter-spacing: 2px;
   margin: 10px 0;
 }
+
 .bg-default .color-get > p {
   font-size: 18px;
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
+
 .page-title {
   display: flex;
   justify-content: space-between;
   padding: 30px;
   margin: 0 auto 50px;
 }
+
 .nav-desktop {
   margin: auto 0;
 }
@@ -68,6 +85,7 @@ a {
   margin: 0 auto;
   font-weight: bold;
 }
+
 .color-get h2 p {
   margin: 0 auto;
   color: #fff;
@@ -75,28 +93,35 @@ a {
   text-shadow: 2px 3px gray;
   text-align: center;
 }
+
 .color-get h2 .tit-sub {
-  font-size: 30px;
+  font-size: 38px;
   margin-bottom: 50px;
 }
+
 .color-get h2 .tit-main {
   font-size: 35px;
 }
+
 .color-get p {
   text-align: center;
 }
+
 .color-get form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.color-get form .color-input {
+  margin-bottom: 20px;
+}
 /* 추천 팔레트 영역 */
 .palettes {
   background-color: #fff;
   color: #000;
-  padding: 30px 0;
+  padding-top: 30px;
 }
+
 .palettes .wrapper-art {
   margin: 0 auto;
 }
@@ -138,51 +163,72 @@ a {
   line-height: 200%;
   min-height: 20px;
 }
-.bg-bottom {
-  background: linear-gradient(45deg, #00c96b, #7f48d8);
+/* bottom-box*/
+.bottom-box {
+  background: linear-gradient(45deg, #7f48d8, #00c96b);
 }
-/* section- about*/
-.about {
+.bottom-box .about {
   display: flex;
-  padding: 100px 5%;
+  padding: 100px;
+  min-height: 1000px;
 }
-.about .bt-left,
-.about .bt-right {
+
+.bottom-box .about div {
   width: 50%;
-  padding: 0 50px;
+  height: 100%;
 }
-.about .bt-left h3,
-.about .bt-left strong,
-.about .bt-left em {
-  margin: 0 auto;
+.bottom-box .about .float-box {
+  position: relative;
+  height: 100%;
+}
+.bottom-box .about div .floating {
+  /* height: 100%; */
+  position: absolute;
+}
+
+.bottom-box .about div h3,
+.bottom-box .about div strong,
+.bottom-box .about div em {
   color: #fff;
-  line-height: 1.2;
+  line-height: 1.4;
   text-shadow: 2px 3px gray;
   font-weight: bold;
-  display: block;
 }
-.about .bt-left h3 {
+
+.bottom-box .about div h3 {
   font-size: 38px;
   margin-bottom: 20px;
 }
-.about .bt-left strong {
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-.about .bt-left em {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.about .bt-left p {
-  margin-bottom: 20px;
-}
-.about .bt-right img {
-  max-width: 600px;
-}
-/* footer */
 
-.footer {
+.bottom-box .about div strong {
+  font-size: 26px;
+}
+
+.bottom-box .about div em {
+  font-size: 20px;
+  margin: 15px 0;
+  display: inline-block;
+}
+
+.bottom-box .about div p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.bottom-box .about div p a {
+  color: aqua;
+  border-bottom: 1px solid aqua;
+}
+
+.bottom-box .about img {
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+/* footer */
+footer {
   border-top: 1px solid #aaa;
+}
+.footer {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -190,40 +236,50 @@ a {
   padding: 30px 50px;
   justify-content: space-between;
 }
+
 .footer .nav {
   display: flex;
   align-items: center;
 }
+
 .footer .github {
   display: flex;
-  /* align-items: center; */
   margin-left: 30px;
 }
-/* .footer .github li::after{
-  display: block;
-  content: '';
-  width: 15px;
-  height: 14px;
-  color: #fff;
-  position: relative;
-  right: 10px;
-  z-index: 10;
-} */
+
 .footer .github li {
   margin-left: 4px;
   align-items: center;
 }
+
+.footer .github li:not(:first-child,:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  margin: 0 3px 0 10px;
+  vertical-align: middle;
+}
+
 .footer .github li a {
   line-height: 19px;
 }
+
 .footer .github li:first-child {
   margin-right: 10px;
 }
+
 .footer .sns-link {
   margin-left: 20px;
 }
+
 .footer .sns-link a {
   margin: 0 5px;
+}
+.footer .nav-list {
+  margin: 0;
+  padding: 14px 0 0 0;
 }
 
 /* palette 페이지 */
@@ -232,7 +288,44 @@ a {
 
 /* gradient3 페이지 */
 
+@media screen and (max-width: 900px) {
+  .bottom-box .about {
+    flex-direction: column;
+    height: 1300px;
+    padding: 10vw;
+  }
+  .bottom-box .about div,
+  .bottom-box .about img {
+    width: 90%;
+  }
+
+  /* footer */
+  .footer .nav {
+    margin: 0 auto;
+  }
+  .footer .nav-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* footer */
+  .footer .nav {
+    flex-direction: column;
+  }
+  .footer .nav li .github {
+    padding: 10px 0 20px;
+  }
+  .footer .nav li .github,
+  .footer .nav li .sns-link {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 640px) {
+  .bg-default {
+    background: url("../img/color-scheme-left.svg") no-repeat bottom left;
+    background-size: 70vw;
+  }
+
   .bg-default .color-get h2 .tit-main {
     font-size: 28px;
   }
@@ -241,18 +334,9 @@ a {
   .color-get .tit-sub {
     display: none;
   }
+
   .color-get .tit-main {
     font-size: 28px;
-  }
-  .about {
-    flex-direction: column;
-  }
-  .about .bt-left {
-    margin-bottom: 50px;
-  }
-  .about .bt-left,
-  .about .bt-right {
-    width: 100%;
   }
   .palettes .art-rec .box-rec {
     flex-direction: column;
@@ -275,5 +359,16 @@ a {
   }
   .palettes .art-rec .box-rec-each .name {
     margin-left: 20px;
+  }
+  /* bottom-box */
+  .bottom-box .about .content-box {
+    min-width: 320px;
+  }
+  .float-box .floating {
+    min-width: 200px;
+  }
+  /* footer */
+  .footer {
+    padding: 20px 10px;
   }
 }
