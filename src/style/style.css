@@ -38,7 +38,7 @@ a {
   font-weight: lighter;
 }
 .bg-wrap {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 .bg-color {
@@ -71,7 +71,7 @@ a {
 .page-title {
   display: flex;
   justify-content: space-between;
-  padding: 30px 50px;
+  padding: 30px;
   margin: 0 auto 50px;
 }
 
