@@ -1,0 +1,24 @@
+.logo.has-badge {
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.logo .logo-img {
+  width: 45px;
+  height: 45px;
+}
+.logo .logo-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 5px;
+}
+.logo .beta-img {
+  width: 41px;
+  height: 17px;
+  position: absolute;
+  left: 140px;
+  top: -4px;
+}

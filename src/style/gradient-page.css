@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import "./default.css";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  width: 95%;
+  font-family: gmarket;
+  font-weight: normal;
+  color: #fff;
+}
+
+.notice {
+  display: none;
+  position: fixed;
+  top: 0;
+}
+.notice strong {
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 0;
+  margin-bottom: 3rem;
+}
+
+.main-tit {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  text-shadow: 0.2rem 0.3rem 0px #898999;
+  padding: 0 0.6rem;
+  margin-bottom: 3.5rem;
+}
+
+.color-form {
+  width: 100%;
+}
+.form-tit {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.orient-wrap {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.orient-wrap .orient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 50%;
+  outline: 2px solid rgba(255, 255, 255, 0);
+  transition: outline 0.3s;
+  cursor: pointer;
+}
+
+input:checked + .orient {
+  outline: 2px solid rgba(255, 255, 255, 1);
+}
+
+.orient .fa-arrow-up {
+  text-align: center;
+  vertical-align: -5px;
+}
+#radio1 + .orient {
+  transform: rotateZ(45deg);
+}
+#radio2 + .orient {
+  transform: rotateZ(90deg);
+}
+#radio3 + .orient {
+  transform: rotateZ(135deg);
+}
+#radio4 + .orient {
+  transform: rotateZ(180deg);
+}
+#radio5 + .orient {
+  transform: rotateZ(225deg);
+}
+#radio6 + .orient {
+  transform: rotateZ(270deg);
+}
+#radio7 + .orient {
+  transform: rotateZ(315deg);
+}
+#radio9 + .orient {
+  transform: rotateX(180deg) rotateZ(90deg);
+}
+
+.colorpick .tit-colorpick {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.link-3gradient {
+  display: block;
+  width: 130px;
+  margin: 0 auto 20px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  opacity: 0.7;
+}
+.link-3gradient:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+  .orient-wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    margin-bottom: 6rem;
+  }
+}

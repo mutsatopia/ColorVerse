@@ -2,154 +2,394 @@
 
 /* utility */
 
-
 body {
-  font-family: 'GmarketSansMedium';
-  background-color:rgb(133, 131, 131);
+  font-family: gmarket;
+  font-weight: normal;
   color: #fff;
-}
-
-main {
-  height: 100vh;
 }
 
 a {
   text-decoration: none;
 }
-/* header */
-header {
-  position: absolute;
+.hide {
+  display: none;
 }
+
+.vsc-initialized {
+  background: linear-gradient(45deg, #4407a7, #00c96b);
+  background-repeat: no-repeat;
+}
+
+/* header */
 .feature-box {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   position: fixed;
   width: 100%;
 }
-.feature-box .fix-header{
+
+.feature-box .fix-header {
   font-weight: bold;
   max-width: 1400px;
   margin: 0 auto;
 }
-.feature-box .fix-header span{
-  font-weight: 300;
+
+.feature-box .fix-header span {
+  font-weight: lighter;
+}
+.bg-wrap {
+  height: 100vh;
+  position: relative;
+}
+.bg-color {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #00c96b, #6513e9);
+  position: absolute;
+  z-index: -10;
+}
+.bg-color.changed {
+  background: linear-gradient(45deg, #845ec2, #ff9671, #f9f871);
+}
+.bg-default {
+  height: 100vh;
+  background: url("../img/color-scheme-left.svg") no-repeat bottom left,
+    url("../img/color-scheme-right.svg") no-repeat bottom right;
+  background-size: 40vw;
+}
+.bg-default .color-get h2 .tit-main {
+  letter-spacing: 2px;
+  margin: 10px 0;
 }
 
+.bg-default .color-get > p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
 
 .page-title {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 30px;
+  margin: 0 auto 50px;
 }
-.effect .list-menu{
-  display: flex;
+
+.nav-desktop {
+  margin: auto 0;
 }
 
 /* main */
-.color-get {
-  margin-top: 20vh;
-}
 .color-get h2 {
   width: 70vw;
   margin: 0 auto;
-  font-family: 'GmarketSansBold';
+  font-weight: bold;
 }
+
 .color-get h2 p {
   margin: 0 auto;
   color: #fff;
   line-height: 1.2;
   text-shadow: 2px 3px gray;
-  font-size: 3rem;
+  text-align: center;
 }
 
+.color-get h2 .tit-sub {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
 
-/* 공통 디자인 모듈 공간 */
+.color-get h2 .tit-main {
+  font-size: 35px;
+}
 
-/* header */
-.logo {
-  cursor: pointer;
+.color-get p {
+  text-align: center;
+}
+
+.color-get form {
   display: flex;
-  text-decoration: none;
-  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.color-get form .color-input {
+  margin-bottom: 20px;
+}
+/* 추천 팔레트 영역 */
+.palettes {
+  background-color: #fff;
+  color: #000;
+  padding: 30px 0;
+}
+
+.palettes .wrapper-art {
+  margin: 0 auto;
+}
+.palettes .art-rec {
+  padding: 30px;
+}
+.palettes .art-rec .tit-art {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.palettes .art-rec .box-rec {
+  display: flex;
+  justify-content: center;
+}
+
+.palettes .art-rec .box-rec-each {
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+.palettes .art-rec .box-rec-each .color {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #845ec2;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
+.palettes .art-rec .box-rec-each .name {
+  color: #696969;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80px;
+  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 200%;
+  min-height: 20px;
+}
+.bg-bottom {
+  background: linear-gradient(45deg, #00c96b, #7f48d8);
+}
+
+/* section- about*/
+.about {
+  display: flex;
+  padding: 100px 5%;
+}
+.about .bt-left,
+.about .bt-right {
+  width: 50%;
+  padding: 0 50px;
+}
+.about .bt-left h3,
+.about .bt-left strong,
+.about .bt-left em {
+  margin: 0 auto;
+  color: #fff;
+  line-height: 1.4;
+  text-shadow: 2px 3px gray;
+  font-weight: bold;
+  display: block;
+}
+.about .bt-left h3 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.about .bt-left strong {
+  font-size: 26px;
+}
+.about .bt-left em {
+  font-size: 20px;
+  margin: 15px 0;
+  display: inline-block;
+}
+.about .bt-left p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.about /.bt-left p a {
+  color: aqua;
+  border-bottom: 1px solid aqua;
+}
+.about .bt-right img {
+  max-width: 600px;
+}
+
+/* footer */
+
+.footer {
+  border-top: 1px solid #aaa;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+}
+
+.footer .nav {
+  display: flex;
   align-items: center;
 }
 
-.logo-img {
-  width: 45px;
-  height: 45px;
+.footer .github {
+  display: flex;
+  margin-left: 30px;
 }
-.logo-text {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  margin-left: 5px;
-  /* line-height: 45px; */
+
+.footer .github li {
+  margin-left: 4px;
+  align-items: center;
 }
-.logo-text::after {
+
+.footer .github li:not(:first-child, :last-child)::after {
+  content: "";
   display: inline-block;
-  content: "Beta";
-  line-height: 16px;
-  width: 26px;
-  height: 15px;
-  color: #fff;
-  background-color:rgb(235, 97, 212);
-  padding: 0 4px;
-  border-radius: 3px;
-  font-size: 9px;
-  font-weight: bold;
-  position: relative;
-  left: -10px;
-  top: -15px;
-  
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  margin: 0 3px 0 10px;
+  vertical-align: middle;
 }
 
-.page-title .effect {
-  margin: auto 0;
+.footer .github li a {
+  line-height: 19px;
 }
 
-.page-title .effect .list-menu li{
-  padding: 10px;
+.footer .github li:first-child {
+  margin-right: 10px;
 }
 
-/* 모바일용버튼 */
-.btn-nav {
-  position: fixed;
-  top: 30px;
-  right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.btn-nav .btn-select,
-.btn-generate .btn-gen{
-  display: block;
-  width: 50px;  
-  height: 50px;
-  background-color: #00a1ba;
-  border-radius: 50%;
-}
-.btn-nav .list-menu {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  text-align: right;
-}
-.btn-nav .list-menu a {
-  background: #00a1ba;
-  display: block;
-  border-radius: 25px;
-  margin-top: 10px;
-  line-height: 100%;
-  padding: 12px;
-  text-align: center;
-  font-size: 10px;
+.footer .sns-link {
+  margin-left: 20px;
 }
 
+.footer .sns-link a {
+  margin: 0 5px;
+}
+.footer .nav-list {
+  margin: 0;
+  padding: 14px 0 0 0;
+}
 
 /* palette 페이지 */
 
 /* gradien2 페이지 */
 
 /* gradient3 페이지 */
+
+@media screen and (max-width: 900px) {
+  .bottom-box .about {
+    flex-direction: column;
+    height: 1300px;
+    padding: 10vw;
+  }
+  .bottom-box .about div,
+  .bottom-box .about img {
+    width: 90%;
+  }
+
+  /* footer */
+  .footer .nav {
+    margin: 0 auto;
+  }
+  .footer .nav-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* footer */
+  .footer .nav {
+    flex-direction: column;
+  }
+  .footer .nav li .github {
+    padding: 10px 0 20px;
+  }
+  .footer .nav li .github,
+  .footer .nav li .sns-link {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .bg-default {
+    background: url("../img/color-scheme-left.svg") no-repeat bottom left;
+    background-size: 70vw;
+  }
+
+  .bg-default .color-get h2 .tit-main {
+    font-size: 28px;
+  }
+
+  /* 메인페이지 */
+  .color-get .tit-sub {
+    display: none;
+  }
+
+  .color-get .tit-main {
+    font-size: 28px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .bt-left {
+    margin-bottom: 50px;
+  }
+  .about .bt-left,
+  .about .bt-right {
+    width: 100%;
+  }
+  .palettes .art-rec .box-rec {
+    flex-direction: column;
+  }
+  .palettes .art-rec .box-rec-each {
+    flex-direction: row;
+    width: auto;
+  }
+  .palettes .art-rec .box-rec-each .color {
+    width: 250px;
+    height: 80px;
+  }
+  .palettes .art-rec .box-rec-each .name {
+    width: 120px;
+  }
+  .palettes .wrapper-art {
+    width: 90%;
+    max-width: 400px;
+    /* 미디어쿼리 처리해야함 모바일에서만 90%*/
+  }
+  .palettes .art-rec .box-rec-each .name {
+    margin-left: 20px;
+  }
+  /* bottom-box */
+  .bottom-box .about .content-box {
+    min-width: 320px;
+  }
+  .float-box .floating {
+    min-width: 200px;
+  }
+  /* footer */
+  .footer {
+    padding: 20px 10px;
+  }
+}
+
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.js-scroll.scrolled {
+  opacity: 1;
+}
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
