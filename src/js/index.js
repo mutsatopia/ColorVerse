@@ -85,9 +85,19 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
   // scroll event 발생시 handleScrollAnimation 함수 실행
-  if (elementOutofView(main)) {
+  if ((window.innerWidth || document.documentElement.clientWidth) <= 700) {
+    displayElement(sectSide);
+  } else if (elementOutofView(main)) {
     hideElement(sectSide);
   } else if (elementInView(main)) {
     displayElement(sectSide);
+  }
+});
+
+window.addEventListener("resize", () => {
+  if ((window.innerWidth || document.documentElement.clientWidth) <= 700) {
+    displayElement(sectSide);
+  } else {
+    hideElement(sectSide);
   }
 });
