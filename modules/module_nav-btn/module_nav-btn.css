@@ -60,14 +60,14 @@
   animation: slidedown 1s ease-in-out both;
 }
 /* 미디어 쿼리 */
-@media screen and (max-width: 700px) {
-  .sect-side {
-    display: block;
-  }
-}
 @media screen and (max-width: 1480px) {
   .sect-side {
     display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sect-side {
+    display: block;
   }
 }
 
