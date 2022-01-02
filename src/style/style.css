@@ -71,7 +71,7 @@ a {
 .page-title {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 2.5%;
   margin: 0 auto 50px;
 }
 
@@ -294,6 +294,9 @@ a {
   }
 }
 @media screen and (max-width: 750px) {
+  .color-get .tit-sub {
+    display: none;
+  }
   /* footer */
   .footer .nav {
     flex-direction: column;
@@ -317,9 +320,6 @@ a {
   }
 
   /* 메인페이지 */
-  .color-get .tit-sub {
-    display: none;
-  }
 
   .color-get .tit-main {
     font-size: 28px;
@@ -368,7 +368,6 @@ a {
     padding: 20px 10px;
   }
 }
-
 
 .js-scroll {
   opacity: 0;
