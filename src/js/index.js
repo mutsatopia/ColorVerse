@@ -5,8 +5,6 @@ const bgChange = document.querySelector(".bg-color");
 const main = document.querySelector("main");
 const bottomBox = document.querySelector(".bg-bottom");
 
-const sectSide = document.querySelector(".sect-side");
-
 genBtn.addEventListener("click", () => {
   bgChange.classList.add("changed");
   main.classList.remove("hide");
@@ -62,6 +60,10 @@ const displayElement = (element) => {
 };
 const hideElement = (element) => {
   element.style.display = "none";
+  removeClass(navList, "off");
+  removeClass(navList, "on");
+  removeClass(genSide, "on");
+  removeClass(genSide, "off");
 };
 
 // const hideScrollElement = (element) => {
@@ -83,9 +85,19 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
   // scroll event 발생시 handleScrollAnimation 함수 실행
-  if (elementOutofView(main)) {
+  if ((window.innerWidth || document.documentElement.clientWidth) <= 700) {
+    displayElement(sectSide);
+  } else if (elementOutofView(main)) {
     hideElement(sectSide);
   } else if (elementInView(main)) {
     displayElement(sectSide);
+  }
+});
+
+window.addEventListener("resize", () => {
+  if ((window.innerWidth || document.documentElement.clientWidth) <= 700) {
+    displayElement(sectSide);
+  } else {
+    hideElement(sectSide);
   }
 });
