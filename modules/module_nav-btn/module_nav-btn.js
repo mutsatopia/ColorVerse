@@ -6,15 +6,22 @@ let switchFlag = false;
 navBtn.addEventListener("click", () => {
   if (!switchFlag) {
     navList.classList.add("on");
-    navList.classList.remove("off");
+    removeClass(navList, "off");
     switchFlag = true;
     genSide.classList.add("on");
-    genSide.classList.remove("off");
+    removeClass(genSide, "off");
   } else {
     navList.classList.add("off");
-    navList.classList.remove("on");
+    removeClass(navList, "on");
     switchFlag = false;
     genSide.classList.add("off");
-    genSide.classList.remove("on");
+    removeClass(genSide, "on");
   }
 });
+const sectSide = document.querySelector(".sect-side");
+
+const removeClass = (el, attr) => {
+  if (el.classList) {
+    el.classList.remove(attr);
+  } 
+}
