@@ -95,6 +95,15 @@ function HSLToHex([h, s, l]) {
   return "#" + r + g + b;
 }
 
+function interpolate(arr) {
+  const length = arr.length - 1;
+  for (i = 0; i < length; i++) {
+    avg = +((arr[2 * i] + arr[2 * i + 1]) / 2).toFixed(1);
+    arr.splice(2 * i + 1, 0, avg);
+  }
+  return arr;
+}
+
 function generateGradient() {
   const orientation = document.querySelector(
     `input[name="orientation"]:checked`
