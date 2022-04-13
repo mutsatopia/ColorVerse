@@ -118,13 +118,15 @@ function generateGradient() {
   const colorCode = document.querySelectorAll(".color-code");
   const resultCode = document.querySelector(".result-code");
 
-  const hexArr = [...colorCode].map((elem) => {
-    return elem.value;
-  });
+  const receivedHexArr = [...colorCode].map((elem) => elem.value);
+  const hslArr = receivedHexArr.map((elem) => hexToHSL(elem));
+  const interpolatedArr = transpose(hslArr).map((elem) => interpolate(elem));
+  const resultHexArr = transpose(interpolatedArr).map((elem) => HSLToHex(elem));
 
   resultCode.textContent = `background-image: ${
     orientation.value === "circle" ? "radial-gradient" : "linear-gradient"
-  }(${orientation.value}, ${hexArr.join(", ")});`;
+  }(${orientation.value}, ${resultHexArr.join(", ")});`;
+
   paintBackground();
 }
 
