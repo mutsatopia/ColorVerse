@@ -104,6 +104,13 @@ function interpolate(arr) {
   return arr;
 }
 
+function transpose(matrix) {
+  return matrix.reduce(
+    (result, row) => row.map((_, i) => [...(result[i] || []), row[i]]),
+    []
+  );
+}
+
 function generateGradient() {
   const orientation = document.querySelector(
     `input[name="orientation"]:checked`
