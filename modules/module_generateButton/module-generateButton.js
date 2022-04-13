@@ -1,14 +1,7 @@
 function generate(page) {
-  if (page === "palletes") {
-    generatePalletes();
-  }
   if (page === "gradient") {
     generateGradient();
   }
-}
-
-function generatePalletes() {
-  // Palletes 페이지에서 GENERATE 버튼 눌렀을 때의 로직을 적어주세요.
 }
 
 function generateGradient() {
@@ -34,7 +27,7 @@ function paintBackground() {
     /^\s+|\s{2,}|\s+$|background-image: |\;/gm,
     ""
   );
-  console.log(bgColor);
   document.body.style.background = bgColor;
 }
+
 paintBackground();
