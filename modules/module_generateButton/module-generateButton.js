@@ -1,9 +1,3 @@
-function generate(page) {
-  if (page === "gradient") {
-    generateGradient();
-  }
-}
-
 function hexToHSL(H) {
   // Convert hex to RGB first
   let r = 0,
@@ -111,6 +105,15 @@ function transpose(matrix) {
   );
 }
 
+function paintBackground() {
+  const resultCode = document.querySelector(".result-code");
+  const bgColor = resultCode.textContent.replace(
+    /^\s+|\s{2,}|\s+$|background-image: |\;/gm,
+    ""
+  );
+  document.body.style.background = bgColor;
+}
+
 function generateGradient() {
   const orientation = document.querySelector(
     `input[name="orientation"]:checked`
@@ -130,13 +133,4 @@ function generateGradient() {
   paintBackground();
 }
 
-function paintBackground() {
-  const resultCode = document.querySelector(".result-code");
-  const bgColor = resultCode.textContent.replace(
-    /^\s+|\s{2,}|\s+$|background-image: |\;/gm,
-    ""
-  );
-  document.body.style.background = bgColor;
-}
-
-paintBackground();
+generateGradient();
